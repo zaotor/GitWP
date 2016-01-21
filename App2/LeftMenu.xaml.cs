@@ -370,6 +370,11 @@ namespace App2
 
         }
 
+       /* private void modif_elem_med_book(object sender, ItemClickEventArgs e)
+        {
+
+        }
+        */
         private void textBlock7_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
@@ -398,7 +403,7 @@ namespace App2
         // Fonction de sauvegarde du medical book.
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            string json = JsonConvert.SerializeObject(new { medical_book = new { size = Tsize.Text, weight = Tweight.Text } });
+            string json = JsonConvert.SerializeObject(new { medical_book = new { size = Tsize.Text, weight = Tweight.Text, fields = Fvalue } });
             request request = new request();
             string ret = request.Put("http://api.linkat.fr/api/medical_book/", usr.id.ToString(), json, usr.auth_token);
             MessageDialog msg;

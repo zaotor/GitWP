@@ -227,7 +227,7 @@
                     <ListView x:ConnectionId='5' x:Name="L_medicalBook" DataContext="{Binding}" Margin="10,257,10,73" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" IsItemClickEnabled="True"                                        >
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock x:Name="value"  Margin="0,177,27,0" TextWrapping="Wrap" Text="{Binding value}" VerticalAlignment="Top" Height="34" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75"/>
+                                <TextBlock x:Name="value"  TextWrapping="Wrap" Text="{Binding value}" VerticalAlignment="Top" Height="34" HorizontalAlignment="Right"/>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
