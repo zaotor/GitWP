@@ -250,7 +250,7 @@ namespace App2
                 if (book == "")
                 {
                     MessageDialog msg;
-                    msg = new MessageDialog("Veuillez créer un carnet médical.");
+                    msg = new MessageDialog("Veuillez d'abord créer un carnet médical en cliquant sur \"Créer\".");
                     msg.ShowAsync();
                 } else
                 {
@@ -258,7 +258,9 @@ namespace App2
                     MessageDialog msge = new MessageDialog(book);
                     msge.ShowAsync();
                     L_medicalBook.ItemsSource = usr.book.Items;
-
+                    // Ajouter un champ size + weight
+                    // Lister les feilds
+                    // Pouvoir les modifier
                     User.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
                     MedicalBook.Visibility = Windows.UI.Xaml.Visibility.Visible;
                 }
@@ -284,7 +286,24 @@ namespace App2
         
         private void create_medicalbook_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageDialog msg;
+            request request1 = new request();
+            string book = request1.Get("http://api.linkat.fr/api/medical_book_by_user_id", "?user_id=" + usr.id.ToString(), usr.auth_token);
+            if (book == "")
+            {
+                string json = JsonConvert.SerializeObject(new { medical_book = new { user_id = usr.id.ToString(), size = "", weight = "", agreement = true } });         
+                //msg = new MessageDialog(json);
+                //msg.ShowAsync();
+                request request = new request();
+                string ret = request.Post("http://api.linkat.fr/api/medical_book/", "", json, usr.auth_token);
+                msg = new MessageDialog("Carnet médical créer. Cliquer sur \"Voir\" pour consulter et modifier le carnet médical");
+                msg.ShowAsync();
+            }
+            else
+            {
+                msg = new MessageDialog("Votre carnet médical a déjà été créé. Cliquer sur \"Voir\" pour le consulter et le modifier");
+                msg.ShowAsync();
+            }
         }
 
         private string getNewUserInfo()

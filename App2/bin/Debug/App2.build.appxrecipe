@@ -9,206 +9,206 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>4c48e9eb-be18-473b-a518-ff7ce5e1bd49</PackageIdentityName>
-    <IntermediateOutputPath>D:\EIP_WindowsPhone\App2\App2\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\EIP_WindowsPhone\GitWP\App2\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\EIP_WindowsPhone\App2\App2\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\bin\Debug\Link%40.exe">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Link%40.exe">
       <PackagePath>Link%40.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client.dll">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client.dll">
       <PackagePath>Facebook.Client.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.6.8.0\lib\portable-win81+wpa81\Facebook.dll">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.6.8.0\lib\portable-win81+wpa81\Facebook.dll">
       <PackagePath>Facebook.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Microsoft.Net.Http.2.2.29\lib\wpa81\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Microsoft.Net.Http.2.2.29\lib\wpa81\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Microsoft.Net.Http.2.2.29\lib\wpa81\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Microsoft.Net.Http.2.2.29\lib\wpa81\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\Contact.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\Contact.png">
       <PackagePath>Assets\Contact.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\contacts.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\contacts.png">
       <PackagePath>Assets\contacts.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\forum.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\forum.png">
       <PackagePath>Assets\forum.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\heart.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\heart.png">
       <PackagePath>Assets\heart.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\home.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\home.png">
       <PackagePath>Assets\home.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\location.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\location.png">
       <PackagePath>Assets\location.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\logo_link%40v1_rond.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\logo_link%40v1_rond.png">
       <PackagePath>Assets\logo_link%40v1_rond.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\search.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\search.png">
       <PackagePath>Assets\search.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\user.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\user.png">
       <PackagePath>Assets\user.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\vaccin.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\vaccin.png">
       <PackagePath>Assets\vaccin.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\FacebookConfig.xml">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\FacebookConfig.xml">
       <PackagePath>FacebookConfig.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\jquery-2.0.0.intellisense.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\jquery-2.0.0.intellisense.js">
       <PackagePath>Scripts\jquery-2.0.0.intellisense.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\jquery-2.0.0.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\jquery-2.0.0.js">
       <PackagePath>Scripts\jquery-2.0.0.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\jquery-2.0.0.min.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\jquery-2.0.0.min.js">
       <PackagePath>Scripts\jquery-2.0.0.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\WinJSContrib.bindings.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\WinJSContrib.bindings.js">
       <PackagePath>Scripts\winjscontrib\WinJSContrib.bindings.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\WinJSContrib.bindings.min.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\WinJSContrib.bindings.min.js">
       <PackagePath>Scripts\winjscontrib\WinJSContrib.bindings.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.core.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.core.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.core.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.core.min.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.core.min.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.core.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.crossplatform.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.crossplatform.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.crossplatform.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.crossplatform.min.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.crossplatform.min.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.crossplatform.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.animation.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.animation.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.animation.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.animation.min.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.animation.min.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.animation.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.boilerplate.control.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.boilerplate.control.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.boilerplate.control.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.boilerplate.observable.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.boilerplate.observable.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.boilerplate.observable.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.childviewflyout.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.childviewflyout.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.childviewflyout.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.childviewflyout.min.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.childviewflyout.min.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.childviewflyout.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.flyoutpage.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.flyoutpage.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.flyoutpage.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.flyoutpage.min.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.flyoutpage.min.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.flyoutpage.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.jquery.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.jquery.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.jquery.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.jquery.min.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.jquery.min.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.jquery.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.navigator.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.navigator.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.navigator.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\Scripts\winjscontrib\winjscontrib.ui.navigator.min.js">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\winjscontrib\winjscontrib.ui.navigator.min.js">
       <PackagePath>Scripts\winjscontrib\winjscontrib.ui.navigator.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\bin\Debug\Link%40.xr.xml">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Link%40.xr.xml">
       <PackagePath>Link%40.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\bin\Debug\LeftMenu.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\LeftMenu.xbf">
       <PackagePath>LeftMenu.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\bin\Debug\Subscribe.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Subscribe.xbf">
       <PackagePath>Subscribe.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\bin\Debug\Login.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Login.xbf">
       <PackagePath>Login.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Facebook.Client.xr.xml">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Facebook.Client.xr.xml">
       <PackagePath>Facebook.Client\Facebook.Client.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\FacebookDialogPage.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\FacebookDialogPage.xbf">
       <PackagePath>Facebook.Client\FacebookDialogPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Common\StandardStyles.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Common\StandardStyles.xbf">
       <PackagePath>Facebook.Client\Common\StandardStyles.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\FriendPicker\FriendPicker.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\FriendPicker\FriendPicker.xbf">
       <PackagePath>Facebook.Client\Controls\FriendPicker\FriendPicker.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\LoginButton\LoginButton.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\LoginButton\LoginButton.xbf">
       <PackagePath>Facebook.Client\Controls\LoginButton\LoginButton.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\PlacePicker\PlacePicker.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\PlacePicker\PlacePicker.xbf">
       <PackagePath>Facebook.Client\Controls\PlacePicker\PlacePicker.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\ProfilePicture\ProfilePicture.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\ProfilePicture\ProfilePicture.xbf">
       <PackagePath>Facebook.Client\Controls\ProfilePicture\ProfilePicture.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\WebDialog\Styles.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\WebDialog\Styles.xbf">
       <PackagePath>Facebook.Client\Controls\WebDialog\Styles.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\WebDialog\WebDialogUserControl.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Controls\WebDialog\WebDialogUserControl.xbf">
       <PackagePath>Facebook.Client\Controls\WebDialog\WebDialogUserControl.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Images\fb_blank_place_profile_square.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Images\fb_blank_place_profile_square.png">
       <PackagePath>Facebook.Client\Images\fb_blank_place_profile_square.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Images\fb_blank_profile_portrait.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Images\fb_blank_profile_portrait.png">
       <PackagePath>Facebook.Client\Images\fb_blank_profile_portrait.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Images\fb_blank_profile_square.png">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Images\fb_blank_profile_square.png">
       <PackagePath>Facebook.Client\Images\fb_blank_profile_square.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Themes\Generic.xbf">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Themes\Generic.xbf">
       <PackagePath>Facebook.Client\Themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\EIP_WindowsPhone\App2\App2\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

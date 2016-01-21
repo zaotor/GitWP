@@ -1,1 +1,1 @@
-D:\EIP_WindowsPhone\App2\App2\App2.csproj;neutral
+D:\EIP_WindowsPhone\GitWP\App2\App2.csproj;neutral

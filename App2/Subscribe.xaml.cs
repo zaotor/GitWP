@@ -56,7 +56,7 @@ namespace App2
                 usr.password = TB_Pass.Text;
                 usr.password_confirmation = TB_VPass.Text;
                 string Sjson = JsonConvert.SerializeObject(new { user = usr });
-                string user = request.Post("http://api.linkat.fr/api/users", "", Sjson);
+                string user = request.Post("http://api.linkat.fr/api/users", "", Sjson, "");
                 if (user == "")
                 {
                     MessageDialog msg;

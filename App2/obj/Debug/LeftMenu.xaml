@@ -187,7 +187,7 @@
                     </AppBarButton>
                 </Grid>
                 <Grid x:Name="Forum" Visibility="Collapsed"/>
-                <Grid x:Name="User" Visibility="Collapsed">
+                <Grid x:Name="User">
                     <Image x:Name="Assets_user_png" HorizontalAlignment="Left" Height="77" Margin="10,10,0,0" Source="Assets/user.png" Stretch="Fill" VerticalAlignment="Top" Width="77"/>
                     <TextBlock x:Name="Fname" Margin="163,35,98,0" TextWrapping="Wrap" Text="Mon Profil" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" Height="38" FontSize="14.667"/>
                     <Button x:ConnectionId='6' x:Name="create_medicalbook" Content="Créer" Margin="50,137,0,0" VerticalAlignment="Top" Height="34" Width="66"                                 />
@@ -211,7 +211,7 @@
                     <Button x:ConnectionId='8' x:Name="BTN_save" Content="Sauvegarder" HorizontalAlignment="Left" Margin="30,0,0,1" VerticalAlignment="Bottom"                            />
                     <Button x:ConnectionId='9' x:Name="BTN_deleteacc" Content="Supprimer" HorizontalAlignment="Right" Margin="0,0,29,1" VerticalAlignment="Bottom"                                 />
                 </Grid>
-                <Grid x:Name="MedicalBook">
+                <Grid x:Name="MedicalBook" Visibility="Collapsed">
                     <AppBarButton x:ConnectionId='3' x:Name="BTN_backbook" HorizontalAlignment="Left" Label="" Margin="0,9,0,0" VerticalAlignment="Top"                           >
                         <AppBarButton.Icon>
                             <SymbolIcon x:Name="BLMenu1" Symbol="Back"/>

@@ -81,9 +81,10 @@ namespace App2
             }
         }
 
-        public string Post(string url, string route, string json)
+        public string Post(string url, string route, string json, string token)
         {
             HttpClient httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             HttpResponseMessage response = httpClient.PostAsync(url + route, new StringContent(json, Encoding.UTF8, "application/json")).Result;
             if (response.IsSuccessStatusCode)
             {
