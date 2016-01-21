@@ -221,7 +221,7 @@ namespace App2
 
         private void BTN_addbook_Click(object sender, RoutedEventArgs e)
         {
-            ItemBookAt item = JsonConvert.DeserializeObject<ItemBookAt>("{'Image': 'Assets/heart.png', 'Categorie': 'Test', 'Title': 'test', 'Description': 'Prescription antibiotique, 05/05/13'}");
+            //ItemBookAt item = JsonConvert.DeserializeObject<ItemBookAt>("{'Image': 'Assets/heart.png', 'Categorie': 'Test', 'Title': 'test', 'Description': 'Prescription antibiotique, 05/05/13'}");
 
             //Book.Items.Add(item);
             //L_medicalBook.ItemsSource = Book.Items;
@@ -231,10 +231,10 @@ namespace App2
 
         private void ItemView_MedicalBook_ItemClick(object sender, ItemClickEventArgs e)
         {
-            ItemBookAt elem = (ItemBookAt)e.ClickedItem;
+            //ItemBookAt elem = (ItemBookAt)e.ClickedItem;
             MessageDialog msg;
-            msg = new MessageDialog(elem.Title.ToString());
-            msg.ShowAsync();
+            //msg = new MessageDialog(elem.Title.ToString());
+            //msg.ShowAsync();
         }
 
         private void ItemView_Contacts_ItemClick(object sender, ItemClickEventArgs e)
@@ -262,7 +262,7 @@ namespace App2
                     MessageDialog msge = new MessageDialog(book);
                     msge.ShowAsync();
                     // Need aprsing pour plusieur fields.
-                    usr.book.fieldlist.Add(usr.book.fields);
+                    usr.book.fieldlist.Add(new elem { value = usr.book.fields });
                     L_medicalBook.ItemsSource = usr.book.fieldlist;
                     Tsize.Text = usr.book.size;
                     Tweight.Text = usr.book.weight;
