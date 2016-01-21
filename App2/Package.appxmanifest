@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="4c48e9eb-be18-473b-a518-ff7ce5e1bd49" Publisher="CN=test" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="4c48e9eb-be18-473b-a518-ff7ce5e1bd49" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>App2</DisplayName>
+    <PublisherDisplayName>test</PublisherDisplayName>
+    <Logo>Assets\logo_link@v1_rond.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="App2.App">
+      <m3:VisualElements DisplayName="Linkat" Square150x150Logo="Assets\logo_link@v1_rond.png" Square44x44Logo="Assets\logo_link@v1_rond.png" Description="Linkat windows phone 8.1 application" ForegroundText="light" BackgroundColor="transparent">
+        <m3:LockScreen Notification="badge" BadgeLogo="Assets\logo_link@v1_rond.png" />
+        <m3:DefaultTile Wide310x150Logo="Assets\logo_link@v1_rond.png" Square71x71Logo="Assets\logo_link@v1_rond.png">
+        </m3:DefaultTile>
+        <m3:SplashScreen Image="Assets\logo_link@v1_rond.png" />
+        <m3:InitialRotationPreference>
+          <m3:Rotation Preference="portrait" />
+        </m3:InitialRotationPreference>
+      </m3:VisualElements>
+      <Extensions>
+        <Extension Category="windows.protocol">
+          <Protocol Name="fb1393062964342593" />
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>

@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+    	<Button x:Name="BTN_connect" Content="Se connecter" HorizontalAlignment="Left" Margin="81,394,0,0" VerticalAlignment="Top" Width="239" Background="#FF76B6DB" Click="BTN_connect_Click"/>
+        <Button x:Name="BTN_subscribe" Content="S'inscrire" HorizontalAlignment="Left" Margin="81,454,0,0" VerticalAlignment="Top" Width="239" Background="#FF133D55" Click="BTN_subscribe_Click"/>
+        <Image x:Name="Logo" Margin="140,88,140,432" Source="Assets/logo_link@v1_rond.png" Stretch="Fill"/>
+
+    </Grid>
+</Page>

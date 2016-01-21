@@ -1,0 +1,295 @@
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\App.g.i.cs
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\App.g.cs
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\Subscribe.g.i.cs
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\Subscribe.g.cs
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\MainPage.g.i.cs
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\MainPage.g.cs
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\Login.g.i.cs
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\Login.g.cs
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\App.xaml
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\Subscribe.xaml
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\MainPage.xaml
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\Login.xaml
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\App.xbf
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\Subscribe.xbf
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\MainPage.xbf
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\Login.xbf
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\App.xbf
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\Subscribe.xbf
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\MainPage.xbf
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\Login.xbf
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\App2.xr.xml
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\App2.exe
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\App2.pdb
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\resources.pri
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\AppxManifest.xml
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\App2.build.appxrecipe
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\App2.exe
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\App2.pdb
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\priconfig.xml
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\priconfig.xml.intermediate
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\layout.resfiles
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\layout.resfiles.intermediate
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\resources.resfiles
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\resources.resfiles.intermediate
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\pri.resfiles
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\pri.resfiles.intermediate
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\qualifiers.txt
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\ProjectArchitectures.txt
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\LeftMenu.g.i.cs
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\LeftMenu.g.cs
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\LeftMenu.xaml
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\obj\Debug\LeftMenu.xbf
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\Assets\user.png
+C:\Users\Artax\Documents\Visual Studio 2013\Projects\App2\App2\bin\Debug\LeftMenu.xbf
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Assets\user.png
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\App.xbf
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\LeftMenu.xbf
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Subscribe.xbf
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\MainPage.xbf
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Login.xbf
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\resources.pri
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\AppxManifest.xml
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\App2.build.appxrecipe
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\App.g.i.cs
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\App.g.cs
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.g.i.cs
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.g.cs
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.g.i.cs
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.g.cs
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.g.i.cs
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.g.cs
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\Login.g.i.cs
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\Login.g.cs
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\XamlTypeInfo.g.cs
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\App.xaml
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.xaml
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.xaml
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.xaml
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\App.xbf
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.xbf
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.xbf
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.xbf
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\XamlSaveStateFile.xml
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\Login.xaml
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\Login.xbf
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\priconfig.xml
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\priconfig.xml.intermediate
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\layout.resfiles
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\layout.resfiles.intermediate
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\resources.resfiles
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\resources.resfiles.intermediate
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\pri.resfiles
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\pri.resfiles.intermediate
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\qualifiers.txt
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\qualifiers.txt.intermediate
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\ProjectArchitectures.txt
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.dll
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.pdb
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.xml
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.pri
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\App2.csproj.GenerateResource.Cache
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\Facebook.Client.pri.xml
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Link@.xr.xml
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Link@.exe
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Link@.pdb
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\Link@.exe
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\Link@.pdb
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.dll
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.xml
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Extensions.dll
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Primitives.dll
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Extensions.xml
+F:\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Primitives.xml
+F:\Documents\EIP Link@t\App2\App2\obj\Debug\App2.csprojResolveAssemblyReference.cache
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\App.xbf
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\LeftMenu.xbf
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Subscribe.xbf
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\MainPage.xbf
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Login.xbf
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Link@.xr.xml
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Link@.exe
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Link@.pdb
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\resources.pri
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\AppxManifest.xml
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\App2.build.appxrecipe
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.dll
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.dll
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Extensions.dll
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Primitives.dll
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.xml
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.pdb
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.xml
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.pri
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Extensions.xml
+D:\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Primitives.xml
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\App2.csprojResolveAssemblyReference.cache
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\App.g.i.cs
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\App.g.cs
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.g.i.cs
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.g.cs
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.g.i.cs
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.g.cs
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.g.i.cs
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.g.cs
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\Login.g.i.cs
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\Login.g.cs
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\XamlTypeInfo.g.cs
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\App.xaml
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.xaml
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.xaml
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.xaml
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\Login.xaml
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\App.xbf
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.xbf
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.xbf
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.xbf
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\Login.xbf
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\XamlSaveStateFile.xml
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\Link@.exe
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\Link@.pdb
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\App2.csproj.GenerateResource.Cache
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\priconfig.xml
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\priconfig.xml.intermediate
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\layout.resfiles
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\layout.resfiles.intermediate
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\resources.resfiles
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\resources.resfiles.intermediate
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\pri.resfiles
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\pri.resfiles.intermediate
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\qualifiers.txt
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\qualifiers.txt.intermediate
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\Facebook.Client.pri.xml
+D:\Documents\EIP Link@t\App2\App2\obj\Debug\ProjectArchitectures.txt
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\App.xbf
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\LeftMenu.xbf
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Subscribe.xbf
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\MainPage.xbf
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Login.xbf
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Link@.xr.xml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Link@.exe
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Link@.pdb
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\resources.pri
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\AppxManifest.xml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\App2.build.appxrecipe
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.dll
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.dll
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.xml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.pdb
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.xml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Facebook.Client.pri
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\App2.csprojResolveAssemblyReference.cache
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\App.g.i.cs
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\App.g.cs
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.g.i.cs
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.g.cs
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.g.i.cs
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.g.cs
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.g.i.cs
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.g.cs
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\Login.g.i.cs
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\Login.g.cs
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\App.xaml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.xaml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.xaml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.xaml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\Login.xaml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\App.xbf
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\LeftMenu.xbf
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\Subscribe.xbf
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\MainPage.xbf
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\Login.xbf
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\Link@.exe
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\Link@.pdb
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\App2.csproj.GenerateResource.Cache
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\priconfig.xml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\priconfig.xml.intermediate
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\layout.resfiles
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\layout.resfiles.intermediate
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\resources.resfiles
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\resources.resfiles.intermediate
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\pri.resfiles
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\pri.resfiles.intermediate
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\qualifiers.txt
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\Facebook.Client.pri.xml
+C:\Users\Robin\Documents\EIP Link@t\App2\App2\obj\Debug\ProjectArchitectures.txt
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\App.xbf
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\LeftMenu.xbf
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Subscribe.xbf
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\MainPage.xbf
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Login.xbf
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Link@.xr.xml
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Link@.exe
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Link@.pdb
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\resources.pri
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\AppxManifest.xml
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\App2.build.appxrecipe
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Facebook.Client.dll
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Facebook.dll
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Newtonsoft.Json.dll
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\System.Net.Http.Extensions.dll
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\System.Net.Http.Primitives.dll
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Facebook.xml
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Facebook.Client.pdb
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Facebook.Client.xml
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Facebook.Client.pri
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\Newtonsoft.Json.xml
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\System.Net.Http.Extensions.xml
+D:\EIP_WindowsPhone\App2\App2\bin\Debug\System.Net.Http.Primitives.xml
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\App2.csprojResolveAssemblyReference.cache
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\App.g.i.cs
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\App.g.cs
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\LeftMenu.g.i.cs
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\LeftMenu.g.cs
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\Subscribe.g.i.cs
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\Subscribe.g.cs
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\MainPage.g.i.cs
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\MainPage.g.cs
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\Login.g.i.cs
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\Login.g.cs
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\XamlTypeInfo.g.cs
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\App.xaml
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\LeftMenu.xaml
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\Subscribe.xaml
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\MainPage.xaml
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\Login.xaml
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\App.xbf
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\LeftMenu.xbf
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\Subscribe.xbf
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\MainPage.xbf
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\Login.xbf
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\XamlSaveStateFile.xml
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\Link@.exe
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\Link@.pdb
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\App2.csproj.GenerateResource.Cache
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\priconfig.xml
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\priconfig.xml.intermediate
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\layout.resfiles
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\layout.resfiles.intermediate
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\resources.resfiles
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\resources.resfiles.intermediate
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\pri.resfiles
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\pri.resfiles.intermediate
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\qualifiers.txt
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\qualifiers.txt.intermediate
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\Facebook.Client.pri.xml
+D:\EIP_WindowsPhone\App2\App2\obj\Debug\ProjectArchitectures.txt
