@@ -224,17 +224,10 @@
 
                         </AppBarButton.Icon>
                     </AppBarButton>
-                    <ListView x:Name="L_medicalBook" ItemsSource="{Binding}" Margin="10,231,10,73" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" IsItemClickEnabled="True" ItemClick="ItemView_Contacts_ItemClick">
+                    <ListView x:Name="L_medicalBook" DataContext="{Binding}" Margin="10,257,10,73" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" IsItemClickEnabled="True" ItemClick="ItemView_Contacts_ItemClick">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <Grid Height="85" Margin="6" >
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto"/>
-                                    </Grid.ColumnDefinitions>
-                                    <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
-                                        <TextBlock Text="{Binding fields}"/>
-                                    </StackPanel>
-                                </Grid>
+                                <TextBlock x:Name="value"  Margin="0,177,27,0" TextWrapping="Wrap" Text="{Binding elem}" VerticalAlignment="Top" Height="34" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75"/>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
