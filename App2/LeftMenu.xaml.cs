@@ -246,8 +246,8 @@ namespace App2
 
         private void list_medicalbook_Click(object sender, RoutedEventArgs e)
         {
-            if (L_medicalBook.Items.Count == 0)
-            {
+         //   if (L_medicalBook.Items.Count == 0)
+         //   {
                 // Get the medical book on the api
                 request request = new request();
                 string book = request.Get("http://api.linkat.fr/api/medical_book_by_user_id", "?user_id=" + usr.id.ToString(), usr.auth_token);
@@ -271,7 +271,7 @@ namespace App2
                     User.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
                     MedicalBook.Visibility = Windows.UI.Xaml.Visibility.Visible;
                 }
-            }
+           // }
         }
 
         private void BTN_SaveCOntact_Click(object sender, RoutedEventArgs e)
