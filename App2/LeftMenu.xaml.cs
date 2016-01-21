@@ -19,6 +19,7 @@ using Windows.Services.Maps;
 using Windows.Devices.Geolocation;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using Coding4Fun.Toolkit.Controls;
 
 // Pour en savoir plus sur le modèle d’élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -370,11 +371,41 @@ namespace App2
 
         }
 
-       /* private void modif_elem_med_book(object sender, ItemClickEventArgs e)
+        private void input_completed(object sender, PopUpEventArgs<string, PopUpResult> e)
         {
-
+                string result = e.Result;
+                if (item != null)
+                {
+                    int i = 0;
+                    foreach (elem el in usr.book.fieldlist)
+                    {
+                        if (el.value == item)
+                        {
+                        Debug.WriteLine("Founded");
+                            usr.book.fieldlist[i].value = result;
+                        }
+                        i = i + 1;
+                    }
+                //L_medicalBook.InitializeViewChange();
+                L_medicalBook.ItemsSource = usr.book.fieldlist;
+                
+                }
         }
-        */
+
+        private string item = new string();
+
+        private void modif_elem_med_book(object sender, ItemClickEventArgs e)
+        {
+            InputPrompt input = new InputPrompt();
+            input.Message = "Modifier le champ sélectionné";
+            item = L_medicalBook.SelectedItem.ToString();
+            input.Completed += input_completed;
+            input.Show();
+            
+               
+
+       }
+
         private void textBlock7_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
@@ -403,7 +434,8 @@ namespace App2
         // Fonction de sauvegarde du medical book.
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            string json = JsonConvert.SerializeObject(new { medical_book = new { size = Tsize.Text, weight = Tweight.Text, fields = Fvalue } });
+            //string json = JsonConvert.SerializeObject(new { medical_book = new { size = Tsize.Text, weight = Tweight.Text } });
+            string json = JsonConvert.SerializeObject(new { medical_book = usr.book });
             request request = new request();
             string ret = request.Put("http://api.linkat.fr/api/medical_book/", usr.id.ToString(), json, usr.auth_token);
             MessageDialog msg;

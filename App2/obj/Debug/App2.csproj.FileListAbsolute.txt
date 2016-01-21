@@ -355,3 +355,15 @@ D:\EIP_WindowsPhone\GitWP\App2\obj\Debug\qualifiers.txt.intermediate
 D:\EIP_WindowsPhone\GitWP\App2\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\EIP_WindowsPhone\GitWP\App2\obj\Debug\Facebook.Client.pri.xml
 D:\EIP_WindowsPhone\GitWP\App2\obj\Debug\ProjectArchitectures.txt
+D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Coding4Fun.Toolkit.Audio.dll
+D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Coding4Fun.Toolkit.Controls.dll
+D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Coding4Fun.Toolkit.dll
+D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Coding4Fun.Toolkit.Storage.dll
+D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Coding4Fun.Toolkit.pri
+D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Coding4Fun.Toolkit.Audio.pri
+D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Coding4Fun.Toolkit.Controls.pri
+D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Coding4Fun.Toolkit.Storage.pri
+D:\EIP_WindowsPhone\GitWP\App2\obj\Debug\Coding4Fun.Toolkit.pri.xml
+D:\EIP_WindowsPhone\GitWP\App2\obj\Debug\Coding4Fun.Toolkit.Audio.pri.xml
+D:\EIP_WindowsPhone\GitWP\App2\obj\Debug\Coding4Fun.Toolkit.Controls.pri.xml
+D:\EIP_WindowsPhone\GitWP\App2\obj\Debug\Coding4Fun.Toolkit.Storage.pri.xml

@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="value" />
     <RootPropertyPathName Name="address" />
     <RootPropertyPathName Name="email" />
     <RootPropertyPathName Name="age" />
@@ -117,8 +116,8 @@
       <RootProperty Name="DataContext" />
       <RootProperty Name="Margin" />
       <RootProperty Name="IsItemClickEnabled" />
-      <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="ItemClick" />
@@ -142,14 +141,14 @@
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
       <RootProperty Name="Symbol" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />

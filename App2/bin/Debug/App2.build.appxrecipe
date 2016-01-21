@@ -21,6 +21,18 @@
     <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Link%40.exe">
       <PackagePath>Link%40.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Coding4Fun.Toolkit.Audio.2.0.8\lib\wpa81\Coding4Fun.Toolkit.Audio.dll">
+      <PackagePath>Coding4Fun.Toolkit.Audio.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Coding4Fun.Toolkit.Controls.2.1.7\lib\wpa81\Coding4Fun.Toolkit.Controls.dll">
+      <PackagePath>Coding4Fun.Toolkit.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Coding4Fun.Toolkit.Controls.2.1.7\lib\wpa81\Coding4Fun.Toolkit.dll">
+      <PackagePath>Coding4Fun.Toolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Coding4Fun.Toolkit.Storage.2.0.8\lib\wpa81\Coding4Fun.Toolkit.Storage.dll">
+      <PackagePath>Coding4Fun.Toolkit.Storage.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client.dll">
       <PackagePath>Facebook.Client.dll</PackagePath>
     </AppxPackagedFile>
@@ -87,6 +99,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\FacebookConfig.xml">
       <PackagePath>FacebookConfig.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\ReadMe.Coding4Fun.Toolkit.txt">
+      <PackagePath>ReadMe.Coding4Fun.Toolkit.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\Scripts\jquery-2.0.0.intellisense.js">
       <PackagePath>Scripts\jquery-2.0.0.intellisense.js</PackagePath>
@@ -168,6 +183,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\App2\bin\Debug\Login.xbf">
       <PackagePath>Login.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Coding4Fun.Toolkit.Controls.2.1.7\lib\wpa81\Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml">
+      <PackagePath>Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Coding4Fun.Toolkit.Controls.2.1.7\lib\wpa81\Coding4Fun.Toolkit.Controls\Themes\Generic.xbf">
+      <PackagePath>Coding4Fun.Toolkit.Controls\Themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\EIP_WindowsPhone\GitWP\packages\Facebook.Client.1.0.2\lib\wpa81\Facebook.Client\Facebook.Client.xr.xml">
       <PackagePath>Facebook.Client\Facebook.Client.xr.xml</PackagePath>

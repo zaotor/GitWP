@@ -1,6 +1,10 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="d:\documents\eip link@t\app2\app2\obj\debug\intermediatexaml\link@.exe" HashGuid="a489905a-fbca-3ae5-d623-ab44adebf888" />
+    <ReferenceAssembly PathName="d:\eip_windowsphone\gitwp\packages\coding4fun.toolkit.audio.2.0.8\lib\wpa81\coding4fun.toolkit.audio.dll" HashGuid="f1caf03e-ea7e-d20f-9b92-671aec21bcec" />
+    <ReferenceAssembly PathName="d:\eip_windowsphone\gitwp\packages\coding4fun.toolkit.controls.2.1.7\lib\wpa81\coding4fun.toolkit.controls.dll" HashGuid="8bbb9304-fede-39af-5ed4-00ee4e3fd140" />
+    <ReferenceAssembly PathName="d:\eip_windowsphone\gitwp\packages\coding4fun.toolkit.controls.2.1.7\lib\wpa81\coding4fun.toolkit.dll" HashGuid="119685b3-f018-829b-095c-510e7d2a3a28" />
+    <ReferenceAssembly PathName="d:\eip_windowsphone\gitwp\packages\coding4fun.toolkit.storage.2.0.8\lib\wpa81\coding4fun.toolkit.storage.dll" HashGuid="10e1cfdd-97fb-256e-c050-81891682f11a" />
     <ReferenceAssembly PathName="d:\eip_windowsphone\gitwp\packages\facebook.client.1.0.2\lib\wpa81\facebook.client.dll" HashGuid="19cea22a-e579-58a8-e2fe-b50322888186" />
     <ReferenceAssembly PathName="d:\eip_windowsphone\gitwp\packages\facebook.6.8.0\lib\portable-win81+wpa81\facebook.dll" HashGuid="bedf50c2-16f9-eaae-1bc4-d838270a0113" />
     <ReferenceAssembly PathName="d:\eip_windowsphone\gitwp\packages\newtonsoft.json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="0b4cdfc1-2257-2e75-23cf-4052e97b309e" />
