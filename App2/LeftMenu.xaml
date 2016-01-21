@@ -224,7 +224,7 @@
 
                         </AppBarButton.Icon>
                     </AppBarButton>
-                    <ListView x:Name="L_medicalBook" ItemsSource="{Binding}" Margin="10,0,10,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition" IsItemClickEnabled="True" ItemClick="ItemView_Contacts_ItemClick" Height="266" VerticalAlignment="Bottom">
+                    <ListView x:Name="L_medicalBook" ItemsSource="{Binding}" Margin="10,231,10,73" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" IsItemClickEnabled="True" ItemClick="ItemView_Contacts_ItemClick">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Grid Height="85" Margin="6" >
@@ -239,12 +239,13 @@
                         </ListView.ItemTemplate>
                     </ListView>
                     <TextBlock x:Name="textBlock7" Margin="64,40,63,0" TextWrapping="Wrap" Text="Carnet médical" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="18.667" HorizontalAlignment="Center"/>
-                    <TextBox x:Name="Tsize" Margin="128,131,106,0" TextWrapping="Wrap" Text="" d:LayoutOverrides="LeftPosition, RightPosition"/>
-                    <TextBox x:Name="Tweight" Margin="128,203,106,0" TextWrapping="Wrap" Text="" d:LayoutOverrides="LeftPosition, RightPosition"/>
-                    <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="33,150,0,0" TextWrapping="Wrap" Text="Taille :" VerticalAlignment="Top" Height="20" Width="75" FontSize="21.333" LineHeight="8"/>
-                    <TextBlock x:Name="textBlock10_Copy" HorizontalAlignment="Left" Margin="33,222,0,0" TextWrapping="Wrap" Text="Poid :" VerticalAlignment="Top" Height="20" Width="75" FontSize="21.333" LineHeight="8"/>
-                    <TextBlock x:Name="textBlock10_Copy1" Margin="0,150,19,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top" Height="20" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75"/>
-                    <TextBlock x:Name="textBlock10_Copy2" Margin="0,223,19,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Height="34" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75" d:LayoutOverrides="LeftMargin, RightMargin"/>
+                    <TextBox x:Name="Tsize" Margin="120,85,114,0" TextWrapping="Wrap" Text="" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <TextBox x:Name="Tweight" Margin="120,157,114,0" TextWrapping="Wrap" Text="" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="25,104,0,0" TextWrapping="Wrap" Text="Taille :" VerticalAlignment="Top" Height="20" Width="75" FontSize="21.333" LineHeight="8"/>
+                    <TextBlock x:Name="textBlock10_Copy" HorizontalAlignment="Left" Margin="25,176,0,0" TextWrapping="Wrap" Text="Poid :" VerticalAlignment="Top" Height="20" Width="75" FontSize="21.333" LineHeight="8"/>
+                    <TextBlock x:Name="textBlock10_Copy1" Margin="0,104,27,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top" Height="20" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75"/>
+                    <TextBlock x:Name="textBlock10_Copy2" Margin="0,177,27,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Height="34" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75"/>
+                    <Button x:Name="button2" Content="Sauvegarder" HorizontalAlignment="Stretch" Margin="120,0,127,1" VerticalAlignment="Bottom" d:LayoutOverrides="LeftPosition, RightPosition"/>
                 </Grid>
                 <Grid x:Name="AddMedicalBook" d:LayoutOverrides="LeftPosition, RightPosition" Visibility="Collapsed">
                     <Button x:Name="button" Content="Ajouter un champ" HorizontalAlignment="Stretch" Margin="25,269,180,243" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
