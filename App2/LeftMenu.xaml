@@ -224,10 +224,10 @@
 
                         </AppBarButton.Icon>
                     </AppBarButton>
-                    <ListView x:Name="L_medicalBook" DataContext="{Binding}" Margin="10,257,10,73" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" IsItemClickEnabled="True" ItemClick="ItemView_Contacts_ItemClick">
+                    <ListView x:Name="L_medicalBook" DataContext="{Binding}" Margin="10,257,10,73" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" IsItemClickEnabled="True" ItemClick="modif_elem_med_book">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock x:Name="value"  TextWrapping="Wrap" Text="{Binding value}" VerticalAlignment="Top" Height="34" HorizontalAlignment="Right"/>
+                                <TextBox x:Name="Fvalue"  TextWrapping="Wrap" Text="{Binding value}" VerticalAlignment="Top" Height="34" HorizontalAlignment="Right"/>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
