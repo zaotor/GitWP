@@ -18,6 +18,7 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Services.Maps;
 using Windows.Devices.Geolocation;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 // Pour en savoir plus sur le modèle d’élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -56,6 +57,9 @@ namespace App2
             usr = JsonConvert.DeserializeObject<UserAt>(request.Get("http://api.linkat.fr/api/", "users/" + usr.id.ToString(), token));
             usr.auth_token = token;
             UserName.DataContext = usr;
+            MessageDialog msg;
+            Debug.WriteLine(token);
+            //msg.ShowAsync();
         }
 
         private void BTN_menu_Click(object sender, RoutedEventArgs e)
@@ -219,8 +223,8 @@ namespace App2
         {
             ItemBookAt item = JsonConvert.DeserializeObject<ItemBookAt>("{'Image': 'Assets/heart.png', 'Categorie': 'Test', 'Title': 'test', 'Description': 'Prescription antibiotique, 05/05/13'}");
 
-            Book.Items.Add(item);
-            L_medicalBook.ItemsSource = Book.Items;
+            //Book.Items.Add(item);
+            //L_medicalBook.ItemsSource = Book.Items;
         }
 
         List<object> selectedItems;
@@ -255,10 +259,11 @@ namespace App2
                 } else
                 {
                     usr.book = JsonConvert.DeserializeObject<medicalBookAt>(book);
-                    MessageDialog msge = new MessageDialog(book);
+                    MessageDialog msge = new MessageDialog(usr.book.fields);
                     msge.ShowAsync();
-                    L_medicalBook.ItemsSource = usr.book.Items;
-                    // Ajouter un champ size + weight
+         //           L_medicalBook.ItemsSource = usr.book;
+                    Tsize.Text = usr.book.size;
+                    Tweight.Text = usr.book.weight;
                     // Lister les feilds
                     // Pouvoir les modifier
                     User.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
@@ -324,10 +329,13 @@ namespace App2
         {
             request request = new request();
             string json = getNewUserInfo();
-            string ret = request.Put("http://api.linkat.fr/api/users/", usr.id.ToString(), json, usr.auth_token);
             MessageDialog msg;
-            msg = new MessageDialog("Save done.");
+            msg = new MessageDialog(json);
             msg.ShowAsync();
+            string ret = request.Put("http://api.linkat.fr/api/users/", usr.id.ToString(), json, usr.auth_token);
+            //MessageDialog msg;
+            msg = new MessageDialog("Save done.");
+            //msg.ShowAsync();
             User.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             lmenu.Visibility = Windows.UI.Xaml.Visibility.Visible;
             val = 0;

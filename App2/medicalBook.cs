@@ -17,6 +17,13 @@ namespace App2
 
     public class medicalBookAt
     {
-        public ObservableCollection<ItemBookAt> Items = new ObservableCollection<ItemBookAt>();
+        public string id { get; set; }
+        public string user_id { get; set; }
+        public string fields { get;  set; }
+        public string size { get; set; }
+        public string weight { get; set; }
+        public string agreement { get; set; }
+        public string address_id { get; set; }
+       // public ObservableCollection<ItemBookAt> Items = new ObservableCollection<ItemBookAt>();
     }
 }

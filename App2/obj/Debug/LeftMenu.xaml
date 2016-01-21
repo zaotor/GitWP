@@ -187,7 +187,7 @@
                     </AppBarButton>
                 </Grid>
                 <Grid x:Name="Forum" Visibility="Collapsed"/>
-                <Grid x:Name="User">
+                <Grid x:Name="User" Visibility="Collapsed">
                     <Image x:Name="Assets_user_png" HorizontalAlignment="Left" Height="77" Margin="10,10,0,0" Source="Assets/user.png" Stretch="Fill" VerticalAlignment="Top" Width="77"/>
                     <TextBlock x:Name="Fname" Margin="163,35,98,0" TextWrapping="Wrap" Text="Mon Profil" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" Height="38" FontSize="14.667"/>
                     <Button x:ConnectionId='6' x:Name="create_medicalbook" Content="Créer" Margin="50,137,0,0" VerticalAlignment="Top" Height="34" Width="66"                                 />
@@ -211,7 +211,7 @@
                     <Button x:ConnectionId='8' x:Name="BTN_save" Content="Sauvegarder" HorizontalAlignment="Left" Margin="30,0,0,1" VerticalAlignment="Bottom"                            />
                     <Button x:ConnectionId='9' x:Name="BTN_deleteacc" Content="Supprimer" HorizontalAlignment="Right" Margin="0,0,29,1" VerticalAlignment="Bottom"                                 />
                 </Grid>
-                <Grid x:Name="MedicalBook" Visibility="Collapsed">
+                <Grid x:Name="MedicalBook">
                     <AppBarButton x:ConnectionId='3' x:Name="BTN_backbook" HorizontalAlignment="Left" Label="" Margin="0,9,0,0" VerticalAlignment="Top"                           >
                         <AppBarButton.Icon>
                             <SymbolIcon x:Name="BLMenu1" Symbol="Back"/>
@@ -224,9 +224,27 @@
 
                         </AppBarButton.Icon>
                     </AppBarButton>
-                    <ListView x:ConnectionId='5' x:Name="L_medicalBook" Margin="9,90,10,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" IsItemClickEnabled="True"                                        />
+                    <ListView x:ConnectionId='5' x:Name="L_medicalBook" ItemsSource="{Binding}" Margin="10,0,10,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition" IsItemClickEnabled="True"                                         Height="266" VerticalAlignment="Bottom">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Height="85" Margin="6" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
+                                        <TextBlock Text="{Binding fields}"/>
+                                    </StackPanel>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
                     <TextBlock x:Name="textBlock7" Margin="64,40,63,0" TextWrapping="Wrap" Text="Carnet médical" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="18.667" HorizontalAlignment="Center"/>
-                    <ScrollViewer Margin="0,72,10,0" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition"/>
+                    <TextBox x:Name="Tsize" Margin="128,131,106,0" TextWrapping="Wrap" Text="" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <TextBox x:Name="Tweight" Margin="128,203,106,0" TextWrapping="Wrap" Text="" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="33,150,0,0" TextWrapping="Wrap" Text="Taille :" VerticalAlignment="Top" Height="20" Width="75" FontSize="21.333" LineHeight="8"/>
+                    <TextBlock x:Name="textBlock10_Copy" HorizontalAlignment="Left" Margin="33,222,0,0" TextWrapping="Wrap" Text="Poid :" VerticalAlignment="Top" Height="20" Width="75" FontSize="21.333" LineHeight="8"/>
+                    <TextBlock x:Name="textBlock10_Copy1" Margin="0,150,19,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top" Height="20" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75"/>
+                    <TextBlock x:Name="textBlock10_Copy2" Margin="0,223,19,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Height="34" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75" d:LayoutOverrides="LeftMargin, RightMargin"/>
                 </Grid>
                 <Grid x:Name="AddMedicalBook" d:LayoutOverrides="LeftPosition, RightPosition" Visibility="Collapsed">
                     <Button x:Name="button" Content="Ajouter un champ" HorizontalAlignment="Stretch" Margin="25,269,180,243" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
