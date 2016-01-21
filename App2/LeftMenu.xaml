@@ -245,7 +245,7 @@
                     <TextBlock x:Name="textBlock10_Copy" HorizontalAlignment="Left" Margin="25,176,0,0" TextWrapping="Wrap" Text="Poid :" VerticalAlignment="Top" Height="20" Width="75" FontSize="21.333" LineHeight="8"/>
                     <TextBlock x:Name="textBlock10_Copy1" Margin="0,104,27,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top" Height="20" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75"/>
                     <TextBlock x:Name="textBlock10_Copy2" Margin="0,177,27,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Height="34" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75"/>
-                    <Button x:Name="button2" Content="Sauvegarder" HorizontalAlignment="Stretch" Margin="120,0,127,1" VerticalAlignment="Bottom" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <Button x:Name="button2" Content="Sauvegarder" HorizontalAlignment="Stretch" Margin="120,0,127,1" VerticalAlignment="Bottom" d:LayoutOverrides="LeftPosition, RightPosition" Click="button2_Click"/>
                 </Grid>
                 <Grid x:Name="AddMedicalBook" d:LayoutOverrides="LeftPosition, RightPosition" Visibility="Collapsed">
                     <Button x:Name="button" Content="Ajouter un champ" HorizontalAlignment="Stretch" Margin="25,269,180,243" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>

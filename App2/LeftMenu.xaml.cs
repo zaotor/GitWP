@@ -259,9 +259,11 @@ namespace App2
                 } else
                 {
                     usr.book = JsonConvert.DeserializeObject<medicalBookAt>(book);
-                    MessageDialog msge = new MessageDialog(usr.book.fields);
+                    MessageDialog msge = new MessageDialog(book);
                     msge.ShowAsync();
-         //           L_medicalBook.ItemsSource = usr.book;
+                    // Need aprsing pour plusieur fields.
+                    usr.book.fieldlist.Add(usr.book.fields);
+                    L_medicalBook.ItemsSource = usr.book.fieldlist;
                     Tsize.Text = usr.book.size;
                     Tweight.Text = usr.book.weight;
                     // Lister les feilds
@@ -391,6 +393,17 @@ namespace App2
         private void textBox5_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        // Fonction de sauvegarde du medical book.
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            string json = JsonConvert.SerializeObject(new { medical_book = new { size = Tsize.Text, weight = Tweight.Text } });
+            request request = new request();
+            string ret = request.Put("http://api.linkat.fr/api/medical_book/", usr.id.ToString(), json, usr.auth_token);
+            MessageDialog msg;
+            msg = new MessageDialog(ret);
+            msg.ShowAsync();
         }
     }
 }

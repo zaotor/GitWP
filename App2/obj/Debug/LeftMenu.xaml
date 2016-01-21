@@ -16,20 +16,20 @@
                         <ColumnDefinition Width="224*"/>
                         <ColumnDefinition Width="97*"/>
                     </Grid.ColumnDefinitions>
-                    <Grid x:ConnectionId='22' x:Name="GR_user"                        >
+                    <Grid x:ConnectionId='23' x:Name="GR_user"                        >
                         <Image x:Name="IMG_profil" HorizontalAlignment="Left" Height="69" Margin="34,13,0,0" VerticalAlignment="Top" Width="69" Source="Assets/user.png"/>
                         <TextBlock x:Name="UserName" HorizontalAlignment="Left" Margin="108,26,-113,0" TextWrapping="Wrap" Text="Profil" VerticalAlignment="Top" Height="42" TextAlignment="Center" Width="229" FontSize="18.667"/>
                     </Grid>
                 </Grid>
                 <Rectangle x:Name="ray" Fill="White" HorizontalAlignment="Left" Height="2" Margin="10,110,0,0" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="321"/>
-                <Grid x:ConnectionId='17' x:Name="GR_home" HorizontalAlignment="Left" Height="59" Margin="10,132,0,0" VerticalAlignment="Top" Width="321"                        >
+                <Grid x:ConnectionId='18' x:Name="GR_home" HorizontalAlignment="Left" Height="59" Margin="10,132,0,0" VerticalAlignment="Top" Width="321"                        >
                     <Image x:Name="IMG_home" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="94" Source="Assets/home.png" Margin="18,0,0,0"/>
                     <TextBlock HorizontalAlignment="Left" Margin="94,10,0,0" TextWrapping="Wrap" Text="Home" VerticalAlignment="Top" Height="39" Width="217" TextAlignment="Center" FontSize="18" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False"/>
                 </Grid>
                 <Rectangle x:Name="ray_Copy" Fill="White" HorizontalAlignment="Left" Height="2" Margin="10,209,0,0" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="321"/>
                 <Grid x:Name="GR_search" HorizontalAlignment="Left" Height="60" Margin="10,231,0,0" VerticalAlignment="Top" Width="321" >
                     <Image x:Name="IMG_search" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="94" Source="Assets/search.png" Margin="18,0,0,0"/>
-                    <TextBlock x:ConnectionId='21' HorizontalAlignment="Left" Margin="94,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="217" TextAlignment="Center" FontSize="18"                          >
+                    <TextBlock x:ConnectionId='22' HorizontalAlignment="Left" Margin="94,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="217" TextAlignment="Center" FontSize="18"                          >
                     	<Run Text="Search"/>
                     	<LineBreak/>
                     	<Run/>
@@ -38,7 +38,7 @@
                 <Rectangle x:Name="ray1" Fill="White" HorizontalAlignment="Left" Height="2" Margin="10,309,0,0" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="321"/>
                 <Grid x:Name="GR_contacts" HorizontalAlignment="Left" Height="60" Margin="10,331,0,0" VerticalAlignment="Top" Width="321">
                     <Image x:Name="IMG_contacts" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="94" Source="Assets/contacts.png" Margin="18,0,0,0"/>
-                    <TextBlock x:ConnectionId='20' HorizontalAlignment="Left" Margin="94,10,0,0" TextWrapping="Wrap" Text="Contacts" VerticalAlignment="Top" Height="39" Width="217" TextAlignment="Center" FontSize="18"                            />
+                    <TextBlock x:ConnectionId='21' HorizontalAlignment="Left" Margin="94,10,0,0" TextWrapping="Wrap" Text="Contacts" VerticalAlignment="Top" Height="39" Width="217" TextAlignment="Center" FontSize="18"                            />
                 </Grid>
                 <Rectangle x:Name="ray2" Fill="White" HorizontalAlignment="Left" Height="2" Margin="10,409,0,0" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="321"/>
                 <Grid x:Name="GR_forum" HorizontalAlignment="Left" Height="60" Margin="10,431,0,0" VerticalAlignment="Top" Width="321" >
@@ -47,7 +47,7 @@
                         <ColumnDefinition Width="71*"/>
                     </Grid.ColumnDefinitions>
                     <Image x:Name="IMG_forum" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="94" Source="Assets/forum.png" Margin="15,0,0,0"/>
-                    <TextBlock x:ConnectionId='19' HorizontalAlignment="Left" Margin="94,10,0,0" TextWrapping="Wrap" Text="Forum" VerticalAlignment="Top" Height="39" Width="217" TextAlignment="Center" FontSize="18" Grid.ColumnSpan="2"                         />
+                    <TextBlock x:ConnectionId='20' HorizontalAlignment="Left" Margin="94,10,0,0" TextWrapping="Wrap" Text="Forum" VerticalAlignment="Top" Height="39" Width="217" TextAlignment="Center" FontSize="18" Grid.ColumnSpan="2"                         />
                 </Grid>
                 <Rectangle x:Name="ray3" Fill="White" HorizontalAlignment="Left" Height="2" Margin="10,509,0,0" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="321"/>
                 <TextBlock HorizontalAlignment="Left" Margin="44,538,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="260" TextAlignment="Center">
@@ -55,7 +55,7 @@
 					<LineBreak/>
 					<Run Text="Link@"/>
                 </TextBlock>
-                <Button x:ConnectionId='18' Content="LogOut" HorizontalAlignment="Left" Margin="10,510,0,0" VerticalAlignment="Top"                      Height="40" Width="40"/>
+                <Button x:ConnectionId='19' Content="LogOut" HorizontalAlignment="Left" Margin="10,510,0,0" VerticalAlignment="Top"                      Height="40" Width="40"/>
             </Grid>
         </Border>
         <Grid x:Name="BodyPage" Height="640" Canvas.Left="1" Canvas.Top="1" Width="399">
@@ -79,7 +79,7 @@
                 </Grid>
                 <Grid x:Name="Search" Margin="0,-1,0,1" Visibility="Collapsed">
                     <TextBlock x:Name="textBlock3" Margin="60,10,62,0" TextWrapping="Wrap" Text="Trouver autour de moi en 1 click" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" Height="25" FontSize="13.333" HorizontalAlignment="Center"/>
-                    <Button x:ConnectionId='16' x:Name="BTN_arround_me_one_click" Content="Autour de moi"                              HorizontalAlignment="Center" Width="315" Margin="32,43,32,470"/>
+                    <Button x:ConnectionId='17' x:Name="BTN_arround_me_one_click" Content="Autour de moi"                              HorizontalAlignment="Center" Width="315" Margin="32,43,32,470"/>
                     <Image x:Name="Assets_location_png" HorizontalAlignment="Left" Margin="10,125,0,0" Source="Assets/location.png" Stretch="Fill" Width="28" Height="28" VerticalAlignment="Top"/>
                     <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="59,125,0,0" TextWrapping="Wrap" Text="Vous êtes situé à :" VerticalAlignment="Top" FontSize="13.333"/>
                     <Rectangle x:Name="ray9" Fill="White" HorizontalAlignment="Left" Height="2" Margin="10,213,0,0" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="359"/>
@@ -92,7 +92,7 @@
                     <Button x:Name="BTN_chosePlace" Content="Choisir un lieu" Margin="0,0,10,55" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="150" d:LayoutOverrides="LeftMargin, RightMargin"/>
                 </Grid>
                 <Grid x:Name="SearchList" Visibility="Collapsed">
-                    <ListView x:ConnectionId='15' x:Name="L_Search" Margin="9,90,10,10" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" ItemsSource="{Binding}" IsItemClickEnabled="True"                               >
+                    <ListView x:ConnectionId='16' x:Name="L_Search" Margin="9,90,10,10" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" ItemsSource="{Binding}" IsItemClickEnabled="True"                               >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Grid Height="85" Margin="6" >
@@ -130,7 +130,7 @@
                 		<LineBreak/>
                 		<Run/>
                     </TextBlock>
-                    <Button x:ConnectionId='14' x:Name="BTN_rdv" Content="Prendre rendez-vous" HorizontalAlignment="Stretch" Margin="90,0,90,30" VerticalAlignment="Bottom"                             d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <Button x:ConnectionId='15' x:Name="BTN_rdv" Content="Prendre rendez-vous" HorizontalAlignment="Stretch" Margin="90,0,90,30" VerticalAlignment="Bottom"                             d:LayoutOverrides="LeftPosition, RightPosition"/>
                     <TextBlock x:Name="city" Margin="0,0,30,148" TextWrapping="Wrap" FontSize="13.333" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="117">
                 		<Run Text="ville"/>
                 		<LineBreak/>
@@ -138,13 +138,13 @@
                     </TextBlock>
                 </Grid>
                 <Grid x:Name="Contacts" Visibility="Collapsed">
-                    <AppBarButton x:ConnectionId='12' x:Name="BTN_addContact" Label="" Margin="0,10,1,0" HorizontalAlignment="Right" VerticalAlignment="Top"                             >
+                    <AppBarButton x:ConnectionId='13' x:Name="BTN_addContact" Label="" Margin="0,10,1,0" HorizontalAlignment="Right" VerticalAlignment="Top"                             >
                         <AppBarButton.Icon>
                             <SymbolIcon x:Name="BLaddContact" Symbol="Add"/>
 
                         </AppBarButton.Icon>
                     </AppBarButton>
-                    <ListView x:ConnectionId='13' x:Name="L_Contacts" Margin="9,90,10,10" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" ItemsSource="{Binding}" IsItemClickEnabled="True"                                        >
+                    <ListView x:ConnectionId='14' x:Name="L_Contacts" Margin="9,90,10,10" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" ItemsSource="{Binding}" IsItemClickEnabled="True"                                        >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Grid Height="85" Margin="6" >
@@ -179,8 +179,8 @@
                     <TextBlock x:Name="textBlock9_Copy2" HorizontalAlignment="Left" Margin="10,277,0,273" TextWrapping="Wrap" Text="Adresse :" Width="146" FontSize="16" d:LayoutOverrides="TopPosition, BottomPosition"/>
                     <TextBox x:Name="TB_ContactPhone" Margin="10,0,8,143" TextWrapping="Wrap" VerticalAlignment="Bottom" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition"/>
                     <TextBlock x:Name="textBlock9_Copy3" HorizontalAlignment="Left" Margin="10,0,0,187" TextWrapping="Wrap" Text="Télephone :" Width="146" FontSize="16" Height="20" VerticalAlignment="Bottom"/>
-                    <Button x:ConnectionId='10' x:Name="BTN_SaveCOntact" Content="Sauvegarder" HorizontalAlignment="Stretch" Margin="107,0,108,34" VerticalAlignment="Bottom" d:LayoutOverrides="LeftPosition, RightPosition"                              />
-                    <AppBarButton x:ConnectionId='11' x:Name="BTN_backContact" HorizontalAlignment="Left" Label="" Margin="0,-1,0,0" VerticalAlignment="Top"                              >
+                    <Button x:ConnectionId='11' x:Name="BTN_SaveCOntact" Content="Sauvegarder" HorizontalAlignment="Stretch" Margin="107,0,108,34" VerticalAlignment="Bottom" d:LayoutOverrides="LeftPosition, RightPosition"                              />
+                    <AppBarButton x:ConnectionId='12' x:Name="BTN_backContact" HorizontalAlignment="Left" Label="" Margin="0,-1,0,0" VerticalAlignment="Top"                              >
                         <AppBarButton.Icon>
                             <SymbolIcon x:Name="BLMenu3" Symbol="Back"/>
                         </AppBarButton.Icon>
@@ -190,8 +190,8 @@
                 <Grid x:Name="User" Visibility="Collapsed">
                     <Image x:Name="Assets_user_png" HorizontalAlignment="Left" Height="77" Margin="10,10,0,0" Source="Assets/user.png" Stretch="Fill" VerticalAlignment="Top" Width="77"/>
                     <TextBlock x:Name="Fname" Margin="163,35,98,0" TextWrapping="Wrap" Text="Mon Profil" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" Height="38" FontSize="14.667"/>
-                    <Button x:ConnectionId='6' x:Name="create_medicalbook" Content="Créer" Margin="50,137,0,0" VerticalAlignment="Top" Height="34" Width="66"                                 />
-                    <Button x:ConnectionId='7' x:Name="list_medicalbook" Content="Voir" Margin="0,137,50,0" VerticalAlignment="Top" Height="34" Width="66" HorizontalAlignment="Right" d:LayoutOverrides="LeftMargin, RightMargin"                               />
+                    <Button x:ConnectionId='7' x:Name="create_medicalbook" Content="Créer" Margin="50,137,0,0" VerticalAlignment="Top" Height="34" Width="66"                                 />
+                    <Button x:ConnectionId='8' x:Name="list_medicalbook" Content="Voir" Margin="0,137,50,0" VerticalAlignment="Top" Height="34" Width="66" HorizontalAlignment="Right" d:LayoutOverrides="LeftMargin, RightMargin"                               />
                     <Rectangle x:Name="ray5" Fill="White" HorizontalAlignment="Left" Height="2" Margin="10,101,0,0" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="359"/>
                     <TextBlock x:Name="textBlock" Margin="135,121,147,0" TextWrapping="Wrap" Text="Carnet médical" VerticalAlignment="Top" FontSize="13.333" d:LayoutOverrides="LeftPosition, RightPosition" HorizontalAlignment="Center"/>
                     <Rectangle x:Name="ray6" Fill="White" HorizontalAlignment="Left" Height="2" Margin="10,208,0,0" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="359"/>
@@ -208,8 +208,8 @@
                     	<Run Text="Ad"/>
                     	<Run Text="resse :"/>
                     </TextBlock>
-                    <Button x:ConnectionId='8' x:Name="BTN_save" Content="Sauvegarder" HorizontalAlignment="Left" Margin="30,0,0,1" VerticalAlignment="Bottom"                            />
-                    <Button x:ConnectionId='9' x:Name="BTN_deleteacc" Content="Supprimer" HorizontalAlignment="Right" Margin="0,0,29,1" VerticalAlignment="Bottom"                                 />
+                    <Button x:ConnectionId='9' x:Name="BTN_save" Content="Sauvegarder" HorizontalAlignment="Left" Margin="30,0,0,1" VerticalAlignment="Bottom"                            />
+                    <Button x:ConnectionId='10' x:Name="BTN_deleteacc" Content="Supprimer" HorizontalAlignment="Right" Margin="0,0,29,1" VerticalAlignment="Bottom"                                 />
                 </Grid>
                 <Grid x:Name="MedicalBook">
                     <AppBarButton x:ConnectionId='3' x:Name="BTN_backbook" HorizontalAlignment="Left" Label="" Margin="0,9,0,0" VerticalAlignment="Top"                           >
@@ -224,7 +224,7 @@
 
                         </AppBarButton.Icon>
                     </AppBarButton>
-                    <ListView x:ConnectionId='5' x:Name="L_medicalBook" ItemsSource="{Binding}" Margin="10,0,10,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition" IsItemClickEnabled="True"                                         Height="266" VerticalAlignment="Bottom">
+                    <ListView x:ConnectionId='5' x:Name="L_medicalBook" ItemsSource="{Binding}" Margin="10,231,10,73" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" IsItemClickEnabled="True"                                        >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Grid Height="85" Margin="6" >
@@ -239,12 +239,13 @@
                         </ListView.ItemTemplate>
                     </ListView>
                     <TextBlock x:Name="textBlock7" Margin="64,40,63,0" TextWrapping="Wrap" Text="Carnet médical" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="18.667" HorizontalAlignment="Center"/>
-                    <TextBox x:Name="Tsize" Margin="128,131,106,0" TextWrapping="Wrap" Text="" d:LayoutOverrides="LeftPosition, RightPosition"/>
-                    <TextBox x:Name="Tweight" Margin="128,203,106,0" TextWrapping="Wrap" Text="" d:LayoutOverrides="LeftPosition, RightPosition"/>
-                    <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="33,150,0,0" TextWrapping="Wrap" Text="Taille :" VerticalAlignment="Top" Height="20" Width="75" FontSize="21.333" LineHeight="8"/>
-                    <TextBlock x:Name="textBlock10_Copy" HorizontalAlignment="Left" Margin="33,222,0,0" TextWrapping="Wrap" Text="Poid :" VerticalAlignment="Top" Height="20" Width="75" FontSize="21.333" LineHeight="8"/>
-                    <TextBlock x:Name="textBlock10_Copy1" Margin="0,150,19,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top" Height="20" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75"/>
-                    <TextBlock x:Name="textBlock10_Copy2" Margin="0,223,19,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Height="34" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75" d:LayoutOverrides="LeftMargin, RightMargin"/>
+                    <TextBox x:Name="Tsize" Margin="120,85,114,0" TextWrapping="Wrap" Text="" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <TextBox x:Name="Tweight" Margin="120,157,114,0" TextWrapping="Wrap" Text="" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="25,104,0,0" TextWrapping="Wrap" Text="Taille :" VerticalAlignment="Top" Height="20" Width="75" FontSize="21.333" LineHeight="8"/>
+                    <TextBlock x:Name="textBlock10_Copy" HorizontalAlignment="Left" Margin="25,176,0,0" TextWrapping="Wrap" Text="Poid :" VerticalAlignment="Top" Height="20" Width="75" FontSize="21.333" LineHeight="8"/>
+                    <TextBlock x:Name="textBlock10_Copy1" Margin="0,104,27,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top" Height="20" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75"/>
+                    <TextBlock x:Name="textBlock10_Copy2" Margin="0,177,27,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Height="34" FontSize="21.333" LineHeight="8" HorizontalAlignment="Right" Width="75"/>
+                    <Button x:ConnectionId='6' x:Name="button2" Content="Sauvegarder" HorizontalAlignment="Stretch" Margin="120,0,127,1" VerticalAlignment="Bottom" d:LayoutOverrides="LeftPosition, RightPosition"                      />
                 </Grid>
                 <Grid x:Name="AddMedicalBook" d:LayoutOverrides="LeftPosition, RightPosition" Visibility="Collapsed">
                     <Button x:Name="button" Content="Ajouter un champ" HorizontalAlignment="Stretch" Margin="25,269,180,243" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>

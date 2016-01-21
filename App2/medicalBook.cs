@@ -7,14 +7,6 @@ using System.Threading.Tasks;
 
 namespace App2
 {
-    public class ItemBookAt
-    {
-        public string Image { get; set; }
-        public string Categorie { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-    }
-
     public class medicalBookAt
     {
         public string id { get; set; }
@@ -24,6 +16,6 @@ namespace App2
         public string weight { get; set; }
         public string agreement { get; set; }
         public string address_id { get; set; }
-       // public ObservableCollection<ItemBookAt> Items = new ObservableCollection<ItemBookAt>();
+        public ObservableCollection<string> fieldlist { get; set; }
     }
 }
