@@ -434,6 +434,9 @@ namespace App2
         // Fonction de sauvegarde du medical book.
         private void button2_Click(object sender, RoutedEventArgs e)
         {
+            usr.book.size = Tsize.Text;
+            usr.book.weight = Tsize.Text;
+            usr.book.fields = Tfield.Text;
             string json = JsonConvert.SerializeObject(new { medical_book = new { size = Tsize.Text, weight = Tweight.Text , fields = Tfield.Text} });
             //string json = JsonConvert.SerializeObject(new { medical_book = usr.book });
             request request = new request();
