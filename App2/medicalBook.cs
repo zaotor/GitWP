@@ -44,6 +44,10 @@ namespace App2
 
     public class medicalBookAt 
     {
+        public medicalBookAt()
+        {
+            fieldlist = new ObservableCollection<elem>();
+        }
         public string id { get; set; }
         public string user_id { get; set; }
         public string fields { get; set; }
@@ -51,7 +55,7 @@ namespace App2
         public string weight { get; set; }
         public string agreement { get; set; }
         public string address_id { get; set; }
-        public ObservableCollection<elem> fieldlist = new ObservableCollection<elem>();
+        public ObservableCollection<elem> fieldlist { get; set; }
 
        
         

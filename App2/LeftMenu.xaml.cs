@@ -379,9 +379,9 @@ namespace App2
                     int i = 0;
                     foreach (elem el in usr.book.fieldlist)
                     {
-                        if (el.value == item)
+                        if (el == item)
                         {
-                        Debug.WriteLine("Founded");
+                            Debug.WriteLine("Founded");
                             usr.book.fieldlist[i].value = result;
                         }
                         i = i + 1;
@@ -392,13 +392,13 @@ namespace App2
                 }
         }
 
-        private string item = new string();
+        public object item;
 
         private void modif_elem_med_book(object sender, ItemClickEventArgs e)
         {
             InputPrompt input = new InputPrompt();
             input.Message = "Modifier le champ sélectionné";
-            item = L_medicalBook.SelectedItem.ToString();
+            item = e.ClickedItem;
             input.Completed += input_completed;
             input.Show();
             

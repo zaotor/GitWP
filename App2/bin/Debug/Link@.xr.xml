@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="SelectedItem" />
+    <RootPropertyPathName Name="value" />
+    <RootPropertyPathName Name="elem" />
     <RootPropertyPathName Name="address" />
     <RootPropertyPathName Name="email" />
     <RootPropertyPathName Name="age" />
@@ -112,15 +115,10 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="PlaceholderText" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="DataContext" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="IsItemClickEnabled" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="ItemsSource" />
-      <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootEvent Name="ItemClick" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="DisplayMemberPath" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Margin" />
@@ -140,12 +138,23 @@
       <RootProperty Name="IsRightTapEnabled" />
       <RootEvent Name="Tapped" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
       <RootProperty Name="Symbol" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
