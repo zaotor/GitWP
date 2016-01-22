@@ -371,7 +371,7 @@ namespace App2
 
         }
 
-        private void input_completed(object sender, PopUpEventArgs<string, PopUpResult> e)
+       /* private void input_completed(object sender, PopUpEventArgs<string, PopUpResult> e)
         {
                 string result = e.Result;
                 if (item != null)
@@ -404,7 +404,7 @@ namespace App2
             
                
 
-       }
+       } */
 
         private void textBlock7_SelectionChanged(object sender, RoutedEventArgs e)
         {
@@ -434,8 +434,8 @@ namespace App2
         // Fonction de sauvegarde du medical book.
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            //string json = JsonConvert.SerializeObject(new { medical_book = new { size = Tsize.Text, weight = Tweight.Text } });
-            string json = JsonConvert.SerializeObject(new { medical_book = usr.book });
+            string json = JsonConvert.SerializeObject(new { medical_book = new { size = Tsize.Text, weight = Tweight.Text , fields = Tfield.Text} });
+            //string json = JsonConvert.SerializeObject(new { medical_book = usr.book });
             request request = new request();
             string ret = request.Put("http://api.linkat.fr/api/medical_book/", usr.id.ToString(), json, usr.auth_token);
             MessageDialog msg;
