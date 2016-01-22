@@ -19,7 +19,6 @@ using Windows.Services.Maps;
 using Windows.Devices.Geolocation;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using Coding4Fun.Toolkit.Controls;
 
 // Pour en savoir plus sur le modèle d’élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkID=390556
 
