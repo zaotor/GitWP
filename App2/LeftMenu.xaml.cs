@@ -20,6 +20,7 @@ using Windows.Devices.Geolocation;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using Coding4Fun.Toolkit.Controls;
+using System.Text.RegularExpressions;
 
 // Pour en savoir plus sur le modèle d’élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -208,7 +209,7 @@ namespace App2
             ObservableCollection<UserAt> docList = new ObservableCollection<UserAt>();
             string pos = TB_pos.Text;
             request req = new request();
-            string res = req.Get("http://api.linkat.fr/api", "api/search?name=&speciality=&city=" + pos, usr.auth_token);
+            string res = req.Get("http://api.linkat.fr/", "api/search?name=&speciality=&city=" + pos, usr.auth_token);
             char[] delimiterChars = {'[', ']' };
             string[] docs = res.Split(delimiterChars);
             foreach (string doc in docs)
@@ -444,6 +445,48 @@ namespace App2
             MessageDialog msg;
             msg = new MessageDialog(ret);
             msg.ShowAsync();
+        }
+
+        // Boutton de recherche pour choisir un lieu pour la recher.
+        private void BTN_chosePlace_Click(object sender, RoutedEventArgs e)
+        {
+            ObservableCollection<UserAt> docList = new ObservableCollection<UserAt>();
+            string pos = Tlieu.Text;
+            request req = new request();
+            string res = req.Get("http://api.linkat.fr/", "api/search?name=" + Tqui.Text + "&speciality= " + Tspecialite.Text + "&city=" + pos, usr.auth_token);
+            MessageDialog msg;
+            msg = new MessageDialog(res);
+            msg.ShowAsync();
+            //char[] delimiterString = { '[', ']' };
+            //res.Split(delimiterString);
+            string result = res.Substring(1, res.Length - 5);
+            string[] docs = Regex.Split(result, "},");
+            foreach (string doc in docs)
+            {
+            //    doc = doc + "}";
+                docList.Add(JsonConvert.DeserializeObject<UserAt>(doc + "}"));
+            }
+            L_Search.ItemsSource = docList;
+            Search.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            SearchList.Visibility = Windows.UI.Xaml.Visibility.Visible;
+        }
+
+        // Boutton de recher pour "autour de moi".
+        private void BTN_around_Click(object sender, RoutedEventArgs e)
+        {
+            ObservableCollection<UserAt> docList = new ObservableCollection<UserAt>();
+            string pos = TB_pos.Text;
+            request req = new request();
+            string res = req.Get("http://api.linkat.fr/", "api/search?name=" + Tqui.Text + "&speciality= " + Tspecialite.Text + "&city=" + pos, usr.auth_token);
+            char[] delimiterChars = { '[', ']' };
+            string[] docs = res.Split(delimiterChars);
+            foreach (string doc in docs)
+            {
+                docList.Add(JsonConvert.DeserializeObject<UserAt>(doc));
+            }
+            L_Search.ItemsSource = docList;
+            Search.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            SearchList.Visibility = Windows.UI.Xaml.Visibility.Visible;
         }
     }
 }

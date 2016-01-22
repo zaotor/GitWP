@@ -77,7 +77,7 @@
                     <Grid x:Name="GR_next_rdv2" Height="100" Margin="139,0,140,10" VerticalAlignment="Bottom" d:LayoutOverrides="LeftPosition, RightPosition"/>
                     <Grid x:Name="GR_next_rdv3" Height="100" Margin="0,0,10,10" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="100"/>
                 </Grid>
-                <Grid x:Name="Search" Margin="0,-1,0,1" Visibility="Collapsed">
+                <Grid x:Name="Search" Margin="0,-1,0,1">
                     <TextBlock x:Name="textBlock3" Margin="60,10,62,0" TextWrapping="Wrap" Text="Trouver autour de moi en 1 click" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" Height="25" FontSize="13.333" HorizontalAlignment="Center"/>
                     <Button x:Name="BTN_arround_me_one_click" Content="Autour de moi" Click="BTN_arround_me_click" HorizontalAlignment="Center" Width="315" Margin="32,43,32,470"/>
                     <Image x:Name="Assets_location_png" HorizontalAlignment="Left" Margin="10,125,0,0" Source="Assets/location.png" Stretch="Fill" Width="28" Height="28" VerticalAlignment="Top"/>
@@ -85,11 +85,14 @@
                     <Rectangle x:Name="ray9" Fill="White" HorizontalAlignment="Left" Height="2" Margin="10,213,0,0" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="359"/>
                     <TextBlock x:Name="TB_pos" Margin="10,166,10,0" TextWrapping="Wrap" Text="{Binding Country}" VerticalAlignment="Top" Height="42" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="16"/>
                     <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="10,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" d:LayoutOverrides="VerticalAlignment" Height="23" Text="Trouver un professionnel" Width="198"/>
-                    <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="32,272,0,274" TextWrapping="Wrap" Text="Quoi, Qui ?" Width="110" FontSize="16" FontWeight="Bold" d:LayoutOverrides="TopPosition, BottomPosition"/>
-                    <TextBox x:Name="textBox" Margin="10,0,10,204" TextWrapping="Wrap" VerticalAlignment="Bottom" RenderTransformOrigin="0.503,0.562" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition"/>
-                    <TextBlock x:Name="textBlock6_Copy" HorizontalAlignment="Left" Margin="32,0,0,146" TextWrapping="Wrap" Text="Où ?" Width="110" FontSize="16" FontWeight="Bold" Height="24" VerticalAlignment="Bottom"/>
-                    <Button x:Name="BTN_around" Content="Autour de moi" Margin="10,0,0,55" VerticalAlignment="Bottom" Width="150"/>
-                    <Button x:Name="BTN_chosePlace" Content="Choisir un lieu" Margin="0,0,10,55" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="150" d:LayoutOverrides="LeftMargin, RightMargin"/>
+                    <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="32,260,0,0" TextWrapping="Wrap" Text="Nom" Width="110" FontSize="16" FontWeight="Bold" Height="24" VerticalAlignment="Top"/>
+                    <TextBox x:Name="Tqui" Margin="9,0,8,244" TextWrapping="Wrap" VerticalAlignment="Bottom" RenderTransformOrigin="0.503,0.562" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <TextBlock x:Name="where" HorizontalAlignment="Left" Margin="32,0,0,206" TextWrapping="Wrap" Text="Spécialité" Width="110" FontSize="16" FontWeight="Bold" Height="24" VerticalAlignment="Bottom"/>
+                    <TextBox x:Name="Tspecialite" Margin="7,0,9,162" TextWrapping="Wrap" VerticalAlignment="Bottom" RenderTransformOrigin="0.503,0.562" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <TextBlock x:Name="textBlock6_Copy" HorizontalAlignment="Left" Margin="32,0,0,121" TextWrapping="Wrap" Text="Où ?" Width="110" FontSize="16" FontWeight="Bold" Height="24" VerticalAlignment="Bottom"/>
+                    <TextBox x:Name="Tlieu" Margin="6,0,9,82" TextWrapping="Wrap" VerticalAlignment="Bottom" RenderTransformOrigin="0.503,0.562" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <Button x:Name="BTN_around" Content="Autour de moi" Margin="0,0,10,1" VerticalAlignment="Bottom" Click="BTN_around_Click" HorizontalAlignment="Right" Width="150"/>
+                    <Button x:Name="BTN_chosePlace" Content="Rechercher" Margin="14,0,0,1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="150" Click="BTN_chosePlace_Click"/>
                 </Grid>
                 <Grid x:Name="SearchList" Visibility="Collapsed">
                     <ListView x:Name="L_Search" Margin="9,90,10,10" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" ItemsSource="{Binding}" IsItemClickEnabled="True" ItemClick="L_Search_ItemClick">
@@ -211,14 +214,14 @@
                     <Button x:Name="BTN_save" Content="Sauvegarder" HorizontalAlignment="Left" Margin="30,0,0,1" VerticalAlignment="Bottom" Click="BTN_save_user_Click"/>
                     <Button x:Name="BTN_deleteacc" Content="Supprimer" HorizontalAlignment="Right" Margin="0,0,29,1" VerticalAlignment="Bottom" Click="BTN_delete_account_Click"/>
                 </Grid>
-                <Grid x:Name="MedicalBook">
+                <Grid x:Name="MedicalBook" Visibility="Collapsed">
                     <AppBarButton x:Name="BTN_backbook" HorizontalAlignment="Left" Label="" Margin="0,9,0,0" VerticalAlignment="Top" Click="BTN_backbook_Click">
                         <AppBarButton.Icon>
                             <SymbolIcon x:Name="BLMenu1" Symbol="Back"/>
 
                         </AppBarButton.Icon>
                     </AppBarButton>
-                    <AppBarButton x:Name="BTN_addbook" Label="" Margin="0,10,1,0" HorizontalAlignment="Right" VerticalAlignment="Top" Click="BTN_addContact_Click">
+                    <AppBarButton x:Name="BTN_addbook" Label="" Margin="0,10,1,0" HorizontalAlignment="Right" VerticalAlignment="Top" >
                         <AppBarButton.Icon>
                             <SymbolIcon x:Name="BLMenu2" Symbol="Add"/>
 

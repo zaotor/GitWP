@@ -55,9 +55,7 @@ namespace App2
         public string weight { get; set; }
         public string agreement { get; set; }
         public string address_id { get; set; }
-        public ObservableCollection<elem> fieldlist { get; set; }
-
-       
+        public ObservableCollection<elem> fieldlist { get; set; }      
         
     }
 }
