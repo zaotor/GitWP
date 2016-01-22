@@ -77,7 +77,7 @@
                     <Grid x:Name="GR_next_rdv2" Height="100" Margin="139,0,140,10" VerticalAlignment="Bottom" d:LayoutOverrides="LeftPosition, RightPosition"/>
                     <Grid x:Name="GR_next_rdv3" Height="100" Margin="0,0,10,10" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="100"/>
                 </Grid>
-                <Grid x:Name="Search" Margin="0,-1,0,1">
+                <Grid x:Name="Search" Margin="0,-1,0,1" Visibility="Collapsed">
                     <TextBlock x:Name="textBlock3" Margin="60,10,62,0" TextWrapping="Wrap" Text="Trouver autour de moi en 1 click" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" Height="25" FontSize="13.333" HorizontalAlignment="Center"/>
                     <Button x:ConnectionId='15' x:Name="BTN_arround_me_one_click" Content="Autour de moi"                              HorizontalAlignment="Center" Width="315" Margin="32,43,32,470"/>
                     <Image x:Name="Assets_location_png" HorizontalAlignment="Left" Margin="10,125,0,0" Source="Assets/location.png" Stretch="Fill" Width="28" Height="28" VerticalAlignment="Top"/>
@@ -227,7 +227,7 @@
 
                         </AppBarButton.Icon>
                     </AppBarButton>
-                    <ListBox x:Name="L_medicalBook" ItemsSource="{Binding elem}" Margin="10,211,10,148" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" DisplayMemberPath="field" Foreground="Black" />
+                    <ListBox x:Name="L_medicalBook" ItemsSource="{Binding elem}" Margin="10,211,10,148" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" DisplayMemberPath="value" Foreground="White" Background="{x:Null}" BorderBrush="#FF8CC1FF"/>
                     <TextBox x:Name="Tfield" VerticalAlignment="Bottom" Text="{Binding SelectedItem.value, ElementName=L_medicalBook}" Margin="10,0,10,88" d:LayoutOverrides="LeftPosition, RightPosition" />
                     <TextBlock x:Name="textBlock7" Margin="64,40,63,0" TextWrapping="Wrap" Text="Carnet médical" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="18.667" HorizontalAlignment="Center"/>
                     <TextBox x:Name="Tsize" Margin="120,85,114,0" TextWrapping="Wrap" Text="" d:LayoutOverrides="LeftPosition, RightPosition"/>

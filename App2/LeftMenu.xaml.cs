@@ -210,8 +210,8 @@ namespace App2
             string pos = TB_pos.Text;
             request req = new request();
             string res = req.Get("http://api.linkat.fr/", "api/search?name=&speciality=&city=" + pos, usr.auth_token);
-            char[] delimiterChars = {'[', ']' };
-            string[] docs = res.Split(delimiterChars);
+            string result = res.Substring(1, res.Length - 5);
+            string[] docs = Regex.Split(result, "},");
             foreach (string doc in docs)
             {
                 docList.Add(JsonConvert.DeserializeObject<UserAt>(doc));
@@ -450,13 +450,13 @@ namespace App2
         // Boutton de recherche pour choisir un lieu pour la recher.
         private void BTN_chosePlace_Click(object sender, RoutedEventArgs e)
         {
-            ObservableCollection<UserAt> docList = new ObservableCollection<UserAt>();
+            ObservableCollection<Doctor> docList = new ObservableCollection<Doctor>();
             string pos = Tlieu.Text;
             request req = new request();
             string res = req.Get("http://api.linkat.fr/", "api/search?name=" + Tqui.Text + "&speciality= " + Tspecialite.Text + "&city=" + pos, usr.auth_token);
-            MessageDialog msg;
-            msg = new MessageDialog(res);
-            msg.ShowAsync();
+            //MessageDialog msg;
+            //msg = new MessageDialog(res);
+            //msg.ShowAsync();
             //char[] delimiterString = { '[', ']' };
             //res.Split(delimiterString);
             string result = res.Substring(1, res.Length - 5);
@@ -464,7 +464,7 @@ namespace App2
             foreach (string doc in docs)
             {
             //    doc = doc + "}";
-                docList.Add(JsonConvert.DeserializeObject<UserAt>(doc + "}"));
+                docList.Add(JsonConvert.DeserializeObject<Doctor>(doc + "}"));
             }
             L_Search.ItemsSource = docList;
             Search.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
@@ -474,15 +474,15 @@ namespace App2
         // Boutton de recher pour "autour de moi".
         private void BTN_around_Click(object sender, RoutedEventArgs e)
         {
-            ObservableCollection<UserAt> docList = new ObservableCollection<UserAt>();
+            ObservableCollection<Doctor> docList = new ObservableCollection<Doctor>();
             string pos = TB_pos.Text;
             request req = new request();
             string res = req.Get("http://api.linkat.fr/", "api/search?name=" + Tqui.Text + "&speciality= " + Tspecialite.Text + "&city=" + pos, usr.auth_token);
-            char[] delimiterChars = { '[', ']' };
-            string[] docs = res.Split(delimiterChars);
+            string result = res.Substring(1, res.Length - 5);
+            string[] docs = Regex.Split(result, "},");
             foreach (string doc in docs)
             {
-                docList.Add(JsonConvert.DeserializeObject<UserAt>(doc));
+                docList.Add(JsonConvert.DeserializeObject<Doctor>(doc));
             }
             L_Search.ItemsSource = docList;
             Search.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
