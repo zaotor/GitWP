@@ -74,6 +74,8 @@ namespace App2
             MedicalBook.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             Doctor.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             SearchList.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            AppoitmentList.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            ConfirmAppointment.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             lmenu.Visibility = Windows.UI.Xaml.Visibility.Visible;
             val = 0;
             Menu.DataContext = new { pos = val };
@@ -364,15 +366,8 @@ namespace App2
             }
         }
 
-        // Useless.
-        private void L_Appointment_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            SearchList.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            Doctor.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            // e.ClickedItem;
 
-
-        }
+       
 
         public Doctor doctorPicked = new Doctor();
 
@@ -391,40 +386,57 @@ namespace App2
 
         }
 
-       /* private void input_completed(object sender, PopUpEventArgs<string, PopUpResult> e)
+        public Appointment appPicked = new Appointment();
+
+        private void L_Appointment_ItemClick(object sender, ItemClickEventArgs e)
         {
-                string result = e.Result;
-                if (item != null)
-                {
-                    int i = 0;
-                    foreach (elem el in usr.book.fieldlist)
-                    {
-                        if (el == item)
-                        {
-                            Debug.WriteLine("Founded");
-                            usr.book.fieldlist[i].value = result;
-                        }
-                        i = i + 1;
-                    }
-                //L_medicalBook.InitializeViewChange();
-                L_medicalBook.ItemsSource = usr.book.fieldlist;
-                
-                }
+            AppoitmentList.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            Doctor.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            SearchList.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            ConfirmAppointment.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            appPicked = e.ClickedItem as Appointment;
+            DocFirstName.Text = doctorPicked.first_name;
+            DocLastName.Text = doctorPicked.last_name;
+            AppBegins.Text = appPicked.begins;
+            AppFinish.Text = appPicked.finish;
+
+
         }
 
-        public object item;
+        /* private void input_completed(object sender, PopUpEventArgs<string, PopUpResult> e)
+         {
+                 string result = e.Result;
+                 if (item != null)
+                 {
+                     int i = 0;
+                     foreach (elem el in usr.book.fieldlist)
+                     {
+                         if (el == item)
+                         {
+                             Debug.WriteLine("Founded");
+                             usr.book.fieldlist[i].value = result;
+                         }
+                         i = i + 1;
+                     }
+                 //L_medicalBook.InitializeViewChange();
+                 L_medicalBook.ItemsSource = usr.book.fieldlist;
 
-        private void modif_elem_med_book(object sender, ItemClickEventArgs e)
-        {
-            InputPrompt input = new InputPrompt();
-            input.Message = "Modifier le champ sélectionné";
-            item = e.ClickedItem;
-            input.Completed += input_completed;
-            input.Show();
-            
-               
+                 }
+         }
 
-       } */
+         public object item;
+
+         private void modif_elem_med_book(object sender, ItemClickEventArgs e)
+         {
+             InputPrompt input = new InputPrompt();
+             input.Message = "Modifier le champ sélectionné";
+             item = e.ClickedItem;
+             input.Completed += input_completed;
+             input.Show();
+
+
+
+        } */
 
         private void textBlock7_SelectionChanged(object sender, RoutedEventArgs e)
         {
@@ -513,13 +525,14 @@ namespace App2
             string res = req.Get("http://api.linkat.fr/", "api/doctors/" + doctorPicked.id + "/appointments", usr.auth_token);
             MessageDialog msg;
             msg = new MessageDialog(res);
-            //msg.ShowAsync();
+            msg.ShowAsync();
             if (res != null && res != "[]" && res != "")
             {
                 string result = res.Substring(1, res.Length - 5);
                 string[] apps = Regex.Split(result, "},");
                 foreach (string app in apps)
                 {
+                    // Checker si taken = true pour add.
                     applist.Add(JsonConvert.DeserializeObject<Appointment>(app + "}"));
                 }
                 L_Appointment.ItemsSource = applist;
@@ -532,6 +545,29 @@ namespace App2
                 msg1 = new MessageDialog("Pas de Rendez-Vous disponible avec ce docteur.");
                 msg1.ShowAsync();
             }
+        }
+
+        // Confirme app Oui
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            MessageDialog msg;
+            string json = "{\"appointment_id\":\"" + appPicked.id.ToString() + "\"}";
+            request request = new request();
+            string ret = request.Post("http://api.linkat.fr/api/users/", usr.id.ToString() + "/take_appointment/", json, usr.auth_token);
+            //msg = new MessageDialog(ret);
+            msg = new MessageDialog("Votre demande de rendez-vous a bien été prise en compte.");
+            msg.ShowAsync();
+            ConfirmAppointment.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            lmenu.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            val = 0;
+            Menu.DataContext = new { pos = val };
+        }
+
+        // Confirme app Non
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            AppoitmentList.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            ConfirmAppointment.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
         }
     }
 }

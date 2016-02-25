@@ -131,7 +131,7 @@
                                     <!--<Border Width="85" Height="85">
                                         <Image Source="{Binding Image}" Stretch="UniformToFill"/>
                                     </Border>-->
-                                    <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0" Visibility="Collapsed">
+                                    <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
                                         <TextBlock Text="Rendez-vous disponible de "/>
                                         <TextBlock Text="{Binding begins}"/>
                                         <TextBlock Text="à"/>
@@ -276,6 +276,16 @@
                     <TextBox x:Name="textBox3" HorizontalAlignment="Right" Margin="0,10,22,0" TextWrapping="Wrap" Text="Poids" Height="39" Width="166" d:LayoutOverrides="LeftMargin, RightMargin"/>
                     <TextBox x:Name="textBox4" TextWrapping="Wrap" Text="Nom de l'antécédant" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="25,73,0,0" Height="29" Width="332"/>
                     <TextBox x:Name="textBox5" HorizontalAlignment="Left" Margin="25,112,0,0" TextWrapping="Wrap" Text="Détails de l'antécédant" VerticalAlignment="Top" Width="332" Height="162"/>
+                </Grid>
+                <Grid x:Name="ConfirmAppointment" Margin="10">
+                    <TextBlock x:Name="DocFirstName" HorizontalAlignment="Left" Height="40" Margin="36,109,0,0" TextWrapping="Wrap" Text="{Binding first_name}" VerticalAlignment="Top" Width="126"/>
+                    <TextBlock x:Name="DocLastName" Height="40" Margin="0,109,42,0" TextWrapping="Wrap" Text="{Binding last_name}" VerticalAlignment="Top" HorizontalAlignment="Right" Width="127"/>
+                    <TextBlock x:Name="textAlkacon" Text="Voulez vous vraiment prendre ce rendez-vous avec" Height="28" Margin="36,57,65,0" TextWrapping="Wrap" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <TextBlock x:Name="textAlkacon2" Text="à" Height="26" Margin="168,149,148,0" TextWrapping="Wrap" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                    <TextBlock x:Name="AppBegins" HorizontalAlignment="Left" Height="40" Margin="36,149,0,0" TextWrapping="Wrap" Text="{Binding begins}" VerticalAlignment="Top" Width="126"/>
+                    <TextBlock x:Name="AppFinish" Height="40" Margin="0,149,42,0" TextWrapping="Wrap" Text="{Binding finish}" VerticalAlignment="Top" HorizontalAlignment="Right" Width="127"/>
+                    <Button x:Name="button3" Content="Oui" Height="47" Margin="36,189,0,0" VerticalAlignment="Top" Width="126" Click="button3_Click"/>
+                    <Button x:Name="button4" Content="Non" HorizontalAlignment="Right" Height="38" Margin="0,189,43,0" VerticalAlignment="Top" Width="126" Click="button4_Click"/>
                 </Grid>
             </Grid>
         </Grid>
