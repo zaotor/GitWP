@@ -15,9 +15,11 @@
     <RootPropertyPathName Name="LName" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="Image" />
-    <RootPropertyPathName Name="city" />
     <RootPropertyPathName Name="phone_number" />
+    <RootPropertyPathName Name="city" />
     <RootPropertyPathName Name="speciality" />
+    <RootPropertyPathName Name="finish" />
+    <RootPropertyPathName Name="begins" />
     <RootPropertyPathName Name="Country" />
     <RootPropertyPathName Name="pos" />
   </Roots.PropertyPathNames>
@@ -170,6 +172,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="App2.LeftMenu" />

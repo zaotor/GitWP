@@ -72,19 +72,11 @@ namespace App2
             Forum.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             User.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             MedicalBook.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            Doctor.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            SearchList.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             lmenu.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            //this.Frame.Navigate(typeof(LeftMenu));
-            // if (val == 0)
-            // {
-            // val = -365;
-            // Menu.DataContext = new { pos = val };
-            // }
-            //   else
-            // {
             val = 0;
             Menu.DataContext = new { pos = val };
-            // }
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -261,16 +253,23 @@ namespace App2
                 } else
                 {
                     usr.book = JsonConvert.DeserializeObject<medicalBookAt>(book);
-                    MessageDialog msge = new MessageDialog(book);
-                    msge.ShowAsync();
+                    //MessageDialog msge = new MessageDialog(book);
+                    //msge.ShowAsync();
                     // Need aprsing pour plusieur fields.
                     usr.book.fieldlist.Add(new elem { value = usr.book.fields });
                     L_medicalBook.ItemsSource = usr.book.fieldlist;
+                if (usr.book.size != null)
+                {
                     Tsize.Text = usr.book.size;
+                }
+                if (usr.book.weight != null)
+                {
                     Tweight.Text = usr.book.weight;
-                    // Lister les feilds
-                    // Pouvoir les modifier
-                    User.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                }
+               
+                // Lister les feilds
+                // Pouvoir les modifier
+                User.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
                     MedicalBook.Visibility = Windows.UI.Xaml.Visibility.Visible;
                 }
            // }
@@ -334,12 +333,12 @@ namespace App2
             request request = new request();
             string json = getNewUserInfo();
             MessageDialog msg;
-            msg = new MessageDialog(json);
-            msg.ShowAsync();
+            //msg = new MessageDialog(json);
+            //msg.ShowAsync();
             string ret = request.Put("http://api.linkat.fr/api/users/", usr.id.ToString(), json, usr.auth_token);
             //MessageDialog msg;
-            msg = new MessageDialog("Save done.");
-            //msg.ShowAsync();
+            msg = new MessageDialog("Sauvegarde effectuée.");
+            msg.ShowAsync();
             User.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             lmenu.Visibility = Windows.UI.Xaml.Visibility.Visible;
             val = 0;
@@ -365,9 +364,29 @@ namespace App2
             }
         }
 
+        // Useless.
+        private void L_Appointment_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            SearchList.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            Doctor.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            // e.ClickedItem;
+
+
+        }
+
+        public Doctor doctorPicked = new Doctor();
+
         private void L_Search_ItemClick(object sender, ItemClickEventArgs e)
         {
             SearchList.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            Doctor.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            doctorPicked =  e.ClickedItem as Doctor;
+            TDocNom.DataContext = e.ClickedItem;
+            TDocPrenom.DataContext = e.ClickedItem;
+            TDocSpe.DataContext = e.ClickedItem;
+            TDocVille.DataContext = e.ClickedItem;
+            TDocPhone.DataContext = e.ClickedItem;
+            TDocMail.DataContext = e.ClickedItem;
 
 
         }
@@ -457,13 +476,10 @@ namespace App2
             //MessageDialog msg;
             //msg = new MessageDialog(res);
             //msg.ShowAsync();
-            //char[] delimiterString = { '[', ']' };
-            //res.Split(delimiterString);
             string result = res.Substring(1, res.Length - 5);
             string[] docs = Regex.Split(result, "},");
             foreach (string doc in docs)
             {
-            //    doc = doc + "}";
                 docList.Add(JsonConvert.DeserializeObject<Doctor>(doc + "}"));
             }
             L_Search.ItemsSource = docList;
@@ -482,11 +498,40 @@ namespace App2
             string[] docs = Regex.Split(result, "},");
             foreach (string doc in docs)
             {
-                docList.Add(JsonConvert.DeserializeObject<Doctor>(doc));
+                docList.Add(JsonConvert.DeserializeObject<Doctor>(doc + "}"));
             }
             L_Search.ItemsSource = docList;
             Search.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             SearchList.Visibility = Windows.UI.Xaml.Visibility.Visible;
+        }
+
+        private void BTN_take_appointment_Click(object sender, RoutedEventArgs e)
+        {
+            ObservableCollection<Appointment> applist = new ObservableCollection<Appointment>();
+            request req = new request();
+
+            string res = req.Get("http://api.linkat.fr/", "api/doctors/" + doctorPicked.id + "/appointments", usr.auth_token);
+            MessageDialog msg;
+            msg = new MessageDialog(res);
+            //msg.ShowAsync();
+            if (res != null && res != "[]" && res != "")
+            {
+                string result = res.Substring(1, res.Length - 5);
+                string[] apps = Regex.Split(result, "},");
+                foreach (string app in apps)
+                {
+                    applist.Add(JsonConvert.DeserializeObject<Appointment>(app + "}"));
+                }
+                L_Appointment.ItemsSource = applist;
+                Doctor.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                AppoitmentList.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            }
+            else
+            {
+                MessageDialog msg1;
+                msg1 = new MessageDialog("Pas de Rendez-Vous disponible avec ce docteur.");
+                msg1.ShowAsync();
+            }
         }
     }
 }

@@ -33,4 +33,14 @@ namespace App2
         public string phone_number { get; set; }
         public string city { get; set; }
     }
+
+    public class Appointment
+    {   
+        public int id { get; set; }
+        public string begins { get; set; }
+        public string finish { get; set; }
+        public string user_id { get; set; }
+        public string docotr_id { get; set; }
+        public bool taken { get; set; }
+    }
 }

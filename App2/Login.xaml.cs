@@ -60,7 +60,7 @@ namespace App2
             {
                 MessageDialog msg;
                 msg = new MessageDialog("Wrong username or invalid password.");
-                msg.ShowAsync();
+            //    msg.ShowAsync();
             }
             else
             {
