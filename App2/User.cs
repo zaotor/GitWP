@@ -32,6 +32,7 @@ namespace App2
         public string email { get; set; }
         public string phone_number { get; set; }
         public string city { get; set; }
+        public string price { get; set; }
     }
 
     public class Appointment

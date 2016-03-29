@@ -11,15 +11,16 @@
     <RootPropertyPathName Name="address" />
     <RootPropertyPathName Name="email" />
     <RootPropertyPathName Name="age" />
+    <RootPropertyPathName Name="city" />
+    <RootPropertyPathName Name="phone_number" />
+    <RootPropertyPathName Name="speciality" />
     <RootPropertyPathName Name="Phone" />
     <RootPropertyPathName Name="Adress" />
     <RootPropertyPathName Name="Work" />
     <RootPropertyPathName Name="LName" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="Image" />
-    <RootPropertyPathName Name="phone_number" />
-    <RootPropertyPathName Name="city" />
-    <RootPropertyPathName Name="speciality" />
+    <RootPropertyPathName Name="price" />
     <RootPropertyPathName Name="Country" />
     <RootPropertyPathName Name="pos" />
   </Roots.PropertyPathNames>
@@ -116,6 +117,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Background" />
       <RootProperty Name="IsTapEnabled" />
       <RootProperty Name="IsHoldingEnabled" />

@@ -185,11 +185,35 @@ namespace App2
             AddContact.Visibility = Windows.UI.Xaml.Visibility.Visible;
         }
 
+        // VIEW POUR LES FAVORIS.
+        // TODO : Modif request API + Patch ObservableCollection.
         private void GR_forum_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            val = -365;
-            Menu.DataContext = new { pos = val };
-            Forum.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            //val = -365;
+            //Menu.DataContext = new { pos = val };
+
+            ObservableCollection<Doctor> docList = new ObservableCollection<Doctor>();
+            //string pos = "Paris";
+            request req = new request();
+            // Replace by request from getFavfromUser.
+            string res = null;// req.Get("http://api.linkat.fr/", "api/search?name=&speciality=&city=" + pos, usr.auth_token);
+            if (res != null && res != "[]")
+            {
+                string result = res.Substring(1, res.Length - 5);
+                string[] docs = Regex.Split(result, "},");
+                foreach (string doc in docs)
+                {
+                    docList.Add(JsonConvert.DeserializeObject<Doctor>(doc + "}"));
+                }
+                lmenu.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                Forum.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            }
+            else
+            {
+                MessageDialog msg;
+                msg = new MessageDialog("Vous n'avez pas de docteur en favoris.");
+                msg.ShowAsync();
+            }
         }
         
         private void BTN_backbook_Click(object sender, RoutedEventArgs e)
@@ -200,19 +224,28 @@ namespace App2
 
         private void BTN_arround_me_click(object sender, RoutedEventArgs e)
         {
-            ObservableCollection<UserAt> docList = new ObservableCollection<UserAt>();
+            ObservableCollection<Doctor> docList = new ObservableCollection<Doctor>();
             string pos = TB_pos.Text;
             request req = new request();
             string res = req.Get("http://api.linkat.fr/", "api/search?name=&speciality=&city=" + pos, usr.auth_token);
-            string result = res.Substring(1, res.Length - 5);
-            string[] docs = Regex.Split(result, "},");
-            foreach (string doc in docs)
+            if (res != null && res != "[]")
             {
-                docList.Add(JsonConvert.DeserializeObject<UserAt>(doc));
+                string result = res.Substring(1, res.Length - 5);
+                string[] docs = Regex.Split(result, "},");
+                foreach (string doc in docs)
+                {
+                    docList.Add(JsonConvert.DeserializeObject<Doctor>(doc + "}"));
+                }
+                L_Search.ItemsSource = docList;
+                Search.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                SearchList.Visibility = Windows.UI.Xaml.Visibility.Visible;
             }
-            L_Search.ItemsSource = docList;
-            Search.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            SearchList.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            else
+            {
+                MessageDialog msg;
+                msg = new MessageDialog("Nous avons trouvé aucun résultats suivant vos critères de recherche.");
+                msg.ShowAsync();
+            }
         }
 
         private void BTN_addbook_Click(object sender, RoutedEventArgs e)
@@ -488,15 +521,24 @@ namespace App2
             //MessageDialog msg;
             //msg = new MessageDialog(res);
             //msg.ShowAsync();
-            string result = res.Substring(1, res.Length - 5);
-            string[] docs = Regex.Split(result, "},");
-            foreach (string doc in docs)
+            if (res != null && res != "[]")
             {
-                docList.Add(JsonConvert.DeserializeObject<Doctor>(doc + "}"));
+                string result = res.Substring(1, res.Length - 5);
+                string[] docs = Regex.Split(result, "},");
+                foreach (string doc in docs)
+                {
+                    docList.Add(JsonConvert.DeserializeObject<Doctor>(doc + "}"));
+                }
+                L_Search.ItemsSource = docList;
+                Search.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                SearchList.Visibility = Windows.UI.Xaml.Visibility.Visible;
             }
-            L_Search.ItemsSource = docList;
-            Search.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            SearchList.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            else
+            {
+                MessageDialog msg;
+                msg = new MessageDialog("Nous avons trouvé aucun résultats suivant vos critères de recherche.");
+                msg.ShowAsync();
+            }
         }
 
         // Boutton de recher pour "autour de moi".
@@ -547,7 +589,7 @@ namespace App2
             }
         }
 
-        // Confirme app Oui
+        // Confirme appointement Oui
         private void button3_Click(object sender, RoutedEventArgs e)
         {
             MessageDialog msg;
@@ -563,11 +605,28 @@ namespace App2
             Menu.DataContext = new { pos = val };
         }
 
-        // Confirme app Non
+        // Confirme appointement Non
         private void button4_Click(object sender, RoutedEventArgs e)
         {
             AppoitmentList.Visibility = Windows.UI.Xaml.Visibility.Visible;
             ConfirmAppointment.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+        }
+
+        // Ajouter le médecin aux favoris.
+        private void button5_Click(object sender, RoutedEventArgs e)
+        {
+            // TODO : Modifier request + GetJSON + listview Picked.
+            MessageDialog msg;
+            //string json = "{\"doctor_id\":\"" + docPicked.id.ToString() + "\"}";
+            request request = new request();
+            string ret = null;// request.Post("http://api.linkat.fr/api/users/", usr.id.ToString() + "/take_appointment/", json, usr.auth_token);
+            //msg = new MessageDialog(ret);
+            msg = new MessageDialog("Votre docteur a été ajouté aux favoris.");
+            msg.ShowAsync();
+            ConfirmAppointment.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            lmenu.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            val = 0;
+            Menu.DataContext = new { pos = val };
         }
     }
 }
